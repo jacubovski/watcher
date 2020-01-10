@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "costCenter",
+  "action": "allCostCenters",
+  "variables": {
+    "company": 2
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "customerType",
+  "action": "allCustomerTypes",
+  "variables": {
+    "company": 2
+  }
+}

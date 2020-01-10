@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "subType",
+  "action": "allSubTypes",
+  "variables": {
+    "company": 2
+  }
+}

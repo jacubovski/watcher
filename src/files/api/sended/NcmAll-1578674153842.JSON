@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "ncm",
+  "action": "allNcms",
+  "variables": {
+    "company": 2
+  }
+}

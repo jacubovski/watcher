@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "typePrice",
+  "action": "allTypePrices",
+  "variables": {
+    "company": 2
+  }
+}

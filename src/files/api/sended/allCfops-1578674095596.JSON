@@ -1,0 +1,8 @@
+{
+  "module": "table",
+  "target": "cfop",
+  "action": "allCfops",
+  "variables": {
+    "company": 2
+  }
+}
