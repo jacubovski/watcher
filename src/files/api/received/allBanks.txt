@@ -1,0 +1,277 @@
+{
+bco_codigo:1
+bco_codigo_banco:237
+bco_codigo_agencia:2794
+bco_conta:23235
+bco_nome_banco:BRADESCO
+bco_nome_agencia:60.746.948/5611-49
+bco_nosso_numero:0
+bco_contato:RENATA/GUILHERME
+bco_numero_remessa:131
+bco_numero_convenio:0
+bco_numero_contrato:000000000003003817
+bco_telefones:3003-8170
+bco_dv_banco:2
+bco_dv_conta:1
+bco_dv_agencia:4
+bco_observacoes:COBR 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:009
+bco_aceite:false
+bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
+bco_prefixo:O
+bco_codigo_cedente:4642614
+bco_endereco:
+
+bco_codigo:2
+bco_codigo_banco:356
+bco_codigo_agencia:455
+bco_conta:8007216
+bco_nome_banco:BANCO REAL
+bco_nome_agencia:CARDOSO DE MORAES
+bco_nosso_numero:5
+bco_contato:CARLOS CAMISAO
+bco_numero_remessa:3
+bco_numero_convenio:0
+bco_numero_contrato:00000000002183-135
+bco_telefones:0 / 2219-9232
+bco_dv_banco:4
+bco_dv_conta:0
+bco_dv_agencia:0
+bco_observacoes:CARLOS 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:
+bco_aceite:false
+bco_titular:
+bco_prefixo:
+bco_codigo_cedente:
+bco_endereco:
+
+bco_codigo:3
+bco_codigo_banco:104
+bco_codigo_agencia:673
+bco_conta:30004159
+bco_nome_banco:CAIXA ECONOMICA FEDERAL
+bco_nome_agencia:ROCHA MIRANDA
+bco_nosso_numero:0
+bco_contato:JEAN OU LUCIANA
+bco_numero_remessa:1
+bco_numero_convenio:0
+bco_numero_contrato:00000000003359-550
+bco_telefones:0 3390-0660
+bco_dv_banco:0
+bco_dv_conta:0
+bco_dv_agencia:0
+bco_observacoes:COD 104
+bco_modalidade:0
+bco_cnab:0
+bco_carteira:
+bco_aceite:false
+bco_titular:JOAQUIM DA SILVA A E SOUSA
+bco_prefixo:
+bco_codigo_cedente:
+bco_endereco:
+
+bco_codigo:4
+bco_codigo_banco:341
+bco_codigo_agencia:584
+bco_conta:687412
+bco_nome_banco:ITAU DUFER
+bco_nome_agencia:BONSUCESSO
+bco_nosso_numero:0
+bco_contato:FERNANDA 99583-2612
+bco_numero_remessa:0
+bco_numero_convenio:0
+bco_numero_contrato:00000000002560-554
+bco_telefones:9
+bco_dv_banco:0
+bco_dv_conta:0
+bco_dv_agencia:0
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:0
+bco_carteira:
+bco_aceite:false
+bco_titular:DUFER
+bco_prefixo:
+bco_codigo_cedente:
+bco_endereco:
+
+bco_codigo:5
+bco_codigo_banco:341
+bco_codigo_agencia:584
+bco_conta:68743
+bco_nome_banco:ITAU
+bco_nome_agencia:RIO DEMOCRATICOS
+bco_nosso_numero:0
+bco_contato:PAULA 99583-2612
+bco_numero_remessa:7264
+bco_numero_convenio:0
+bco_numero_contrato:000000000000000000
+bco_telefones:3004-5511
+bco_dv_banco:7
+bco_dv_conta:8
+bco_dv_agencia:2
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:109
+bco_aceite:false
+bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
+bco_prefixo:IT
+bco_codigo_cedente:058468743
+bco_endereco:
+
+bco_codigo:6
+bco_codigo_banco:6
+bco_codigo_agencia:50284
+bco_conta:97880300
+bco_nome_banco:BANCO RENDIMENTO
+bco_nome_agencia:A
+bco_nosso_numero:0
+bco_contato:VICENTE
+bco_numero_remessa:0
+bco_numero_convenio:0
+bco_numero_contrato:000000000000000000
+bco_telefones:997758878
+bco_dv_banco:0
+bco_dv_conta:0
+bco_dv_agencia:7
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:0
+bco_carteira:1
+bco_aceite:true
+bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
+bco_prefixo:
+bco_codigo_cedente:
+bco_endereco:
+
+bco_codigo:11
+bco_codigo_banco:33
+bco_codigo_agencia:3455
+bco_conta:13000979
+bco_nome_banco:SANTANDER
+bco_nome_agencia:CARDOSO DE MORAIS
+bco_nosso_numero:0
+bco_contato:DIOGO OU ISRAEL
+bco_numero_remessa:380
+bco_numero_convenio:0
+bco_numero_contrato:333455001935433823
+bco_telefones:2183-1350
+bco_dv_banco:0
+bco_dv_conta:8
+bco_dv_agencia:6
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:2
+bco_carteira:101
+bco_aceite:false
+bco_titular:
+bco_prefixo:
+bco_codigo_cedente:35433820
+bco_endereco:
+
+bco_codigo:21
+bco_codigo_banco:123
+bco_codigo_agencia:12345
+bco_conta:23456789
+bco_nome_banco:BANCO ITAU DO MICHEL
+bco_nome_agencia:OUVIDOR
+bco_nosso_numero:0
+bco_contato:
+bco_numero_remessa:0
+bco_numero_convenio:0
+bco_numero_contrato:000000000000000000
+bco_telefones:123123
+bco_dv_banco:3
+bco_dv_conta:1
+bco_dv_agencia:2
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:109
+bco_aceite:true
+bco_titular:MICHEL JACU
+bco_prefixo:PREFX
+bco_codigo_cedente:054018553
+bco_endereco:
+
+bco_codigo:35
+bco_codigo_banco:345
+bco_codigo_agencia:24562
+bco_conta:62352352
+bco_nome_banco:3523?5,3RH?LDL?DF,BL?DF?LEY
+bco_nome_agencia:E?LN,EL?N?LTN
+bco_nosso_numero:0
+bco_contato:
+bco_numero_remessa:0
+bco_numero_convenio:0
+bco_numero_contrato:000000000000000000
+bco_telefones:
+bco_dv_banco:3
+bco_dv_conta:2
+bco_dv_agencia:5
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:2
+bco_carteira:111
+bco_aceite:true
+bco_titular:?LTY,L?ET,Y?LETY?LETYN
+bco_prefixo:35235
+bco_codigo_cedente:2352352352
+bco_endereco:
+
+bco_codigo:50
+bco_codigo_banco:104
+bco_codigo_agencia:205
+bco_conta:4480
+bco_nome_banco:CAIXA DO ESCRITORIO
+bco_nome_agencia:CARDOSO DE MORAIS
+bco_nosso_numero:0
+bco_contato:LUANA
+bco_numero_remessa:0
+bco_numero_convenio:0
+bco_numero_contrato:000000000000000000
+bco_telefones:3194-1900 97996-5
+bco_dv_banco:0
+bco_dv_conta:0
+bco_dv_agencia:0
+bco_observacoes: 
+bco_modalidade:0
+bco_cnab:0
+bco_carteira:0
+bco_aceite:false
+bco_titular:
+bco_prefixo:
+bco_codigo_cedente:
+bco_endereco:
+
+bco_codigo:76
+bco_codigo_banco:237
+bco_codigo_agencia:6553
+bco_conta:4311
+bco_nome_banco:BRADESCO BOTAFOGO
+bco_nome_agencia:NOVA BOTAFOGO
+bco_nosso_numero:98765
+bco_contato:GERENTE
+bco_numero_remessa:34
+bco_numero_convenio:1234
+bco_numero_contrato:000000001234567890
+bco_telefones:2456-0576
+bco_dv_banco:2
+bco_dv_conta:7
+bco_dv_agencia:6
+bco_observacoes:OBS 
+bco_modalidade:111
+bco_cnab:2
+bco_carteira:66G
+bco_aceite:true
+bco_titular:MICHEL JACUBOVSKI
+bco_prefixo:BRADE
+bco_codigo_cedente:1234567890
+bco_endereco:
+
+}

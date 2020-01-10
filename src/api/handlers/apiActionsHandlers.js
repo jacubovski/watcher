@@ -7,6 +7,9 @@ async function selectModule(...args) {
       case 'table':
         const handlerTables = require('../Tables');
         return await handlerTables.whatTarget(target, action, variables,fileName);
+      case 'financial':
+        const handlerFinancial = require('../Financial');
+        return await handlerFinancial.whatTarget(target, action, variables,fileName);
       default:
         break;
     }

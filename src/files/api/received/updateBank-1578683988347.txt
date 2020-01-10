@@ -1,0 +1,23 @@
+bco_codigo:666
+bco_codigo_banco:666
+bco_codigo_agencia:6666
+bco_conta:23235
+bco_nome_banco:BANCO DO CAPETA
+bco_nome_agencia:60.746.948/5611-49
+bco_nosso_numero:0
+bco_contato:CAPETA/DIABO
+bco_numero_remessa:131
+bco_numero_convenio:0
+bco_numero_contrato:000000000003003817
+bco_telefones:3003-8170
+bco_dv_banco:2
+bco_dv_conta:1
+bco_dv_agencia:4
+bco_observacoes:COBR 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:009
+bco_aceite:false
+bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
+bco_prefixo:O
+bco_codigo_cedente:4642614

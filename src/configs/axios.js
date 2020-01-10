@@ -2,7 +2,7 @@ require('dotenv').config()
 const axios = require('axios');
 const CryptoJS = require('crypto-js');
 const axiosAuth = axios.create({
-  baseURL: 'https://apimastersoft.com.br',
+  baseURL: 'http://127.0.0.1:3000',
   // http://127.0.0.1:3000   https://www.apimastersoft.com.br
 
 });

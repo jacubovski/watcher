@@ -6,4 +6,9 @@ module.exports = {
     const schema = Object.keys(allSchema).filter(k => k === action);
     return allSchema[schema];
   },
+  financial(owner, target, action){
+    const allSchema = Schemas.get(owner, target, action);
+    const schema = Object.keys(allSchema).filter(k => k === action);
+    return allSchema[schema];
+  },
 }
