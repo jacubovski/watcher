@@ -1,0 +1,138 @@
+{
+"module":"table",
+"target":"cfop",
+"action":"bulkCfopCreate",
+"variables": [
+{
+    "cfop_codigo":1101,
+    "cfop_descricao":"COMPRAS NO RJ SEM ST INDUSTR",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1102,
+    "cfop_descricao":"COMPRA NO RJ P/ COMERCIALIZA�AO",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1202,
+    "cfop_descricao":"DEVOLUCAO NO RJ",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1234,
+    "cfop_descricao":"CFOP 1234",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1403,
+    "cfop_descricao":"COMPRA NO RJ P/ COMERC. COM SUBST. TRIBUTARIA",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1411,
+    "cfop_descricao":"DEVOL RJ COM ST",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":1910,
+    "cfop_descricao":"ENTRADA DE BONIFICA�AO",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":2102,
+    "cfop_descricao":"COMPRA INTERESTADUAL ALTERADA",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":2403,
+    "cfop_descricao":"COMPRA INTERESTADUAL COM SUBST. TRIBUTARIA",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":2411,
+    "cfop_descricao":"DEVOLCLIENTE COM ST FORE RJ",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5102,
+    "cfop_descricao":"VENDA NO RJ",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5202,
+    "cfop_descricao":"DEV. DE MERC. NO RJ SEM ST",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5405,
+    "cfop_descricao":"VENDA NO RJ COM SUBS. TRIBUTARIA",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5411,
+    "cfop_descricao":"DEV. DE MERC. NO RJ SUJEITO AO REGIME DE ST  ",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5901,
+    "cfop_descricao":"REMESSA PARA INDUSTRIALIZACAO POR ENCOMENDA  ",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5924,
+    "cfop_descricao":"REMESSA POR CONTA E ORDEM",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":5949,
+    "cfop_descricao":"OUTRAS SAIDAS",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":6102,
+    "cfop_descricao":"VENDA INTEREST P/CONTRIBUINTE",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":6108,
+    "cfop_descricao":"VENDA INTEREST P/NAO CONTRIBUINTE",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":6404,
+    "cfop_descricao":"VENDA INTERESTADUAL COM ST",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":6915,
+    "cfop_descricao":"REMESSA CONSERTO",
+    "empresa": 2
+  }
+,
+{
+    "cfop_codigo":6949,
+    "cfop_descricao":"REMESSA E GARANTIA",
+    "empresa": 2
+  }
+  ]
+}

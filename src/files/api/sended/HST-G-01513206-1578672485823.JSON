@@ -1,0 +1,934 @@
+{
+"module":"table",
+"target":"historic",
+"action":"bulkHistoricCreate",
+"variables": [
+{
+    "hst_codigo":1,
+    "hst_descricao":"LUZ",
+    "hst_fixovariavel":"F",
+    "hst_previsao":1500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":2,
+    "hst_descricao":"TELEFONE",
+    "hst_fixovariavel":"F",
+    "hst_previsao":900.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":3,
+    "hst_descricao":"ALUGUEL",
+    "hst_fixovariavel":"F",
+    "hst_previsao":4100.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":4,
+    "hst_descricao":"IPTU",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":5,
+    "hst_descricao":"AGUA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":350.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":6,
+    "hst_descricao":"TAXA DE INCENDIO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":100.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":7,
+    "hst_descricao":"RADIO(NEXTEL)",
+    "hst_fixovariavel":"F",
+    "hst_previsao":870.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":8,
+    "hst_descricao":"VELOX",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":9,
+    "hst_descricao":"CORREIO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":10,
+    "hst_descricao":"ALUGUEL MAQ. VISA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":80.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":11,
+    "hst_descricao":"ALUGUEL MAQ. CREDICARD",
+    "hst_fixovariavel":"F",
+    "hst_previsao":80.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":12,
+    "hst_descricao":"CONTR. MAN. SIST. INFORMATICA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":830.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":13,
+    "hst_descricao":"CONTR. DE MAN. CENTRAL TELEFONICA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":150.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":14,
+    "hst_descricao":"CONTR. CONTADOR",
+    "hst_fixovariavel":"F",
+    "hst_previsao":4000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":15,
+    "hst_descricao":"MATERIAL P/ MANUT. PREDIAL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":1500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":16,
+    "hst_descricao":"CONTR. DE PAGINA DE INTERNET",
+    "hst_fixovariavel":"F",
+    "hst_previsao":127.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":17,
+    "hst_descricao":"MAO DE OBRA MANUT DE EQUIPAMENTOS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":300.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":18,
+    "hst_descricao":"AQUISI�AO DE EQUIPAMENTOS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":19,
+    "hst_descricao":"PE�AS P/ EQUIPAMENTOS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":20,
+    "hst_descricao":"PROPAGANDA",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":21,
+    "hst_descricao":"DOA�OES",
+    "hst_fixovariavel":"V",
+    "hst_previsao":100.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":22,
+    "hst_descricao":"GPS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":21000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":23,
+    "hst_descricao":"IMPOSTO UNICO",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":24,
+    "hst_descricao":"CONTIRBUI�AO SINDICAL",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":25,
+    "hst_descricao":"ICMS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":45000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":26,
+    "hst_descricao":"PIS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":8000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":27,
+    "hst_descricao":"COFINS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":30000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":28,
+    "hst_descricao":"CSLL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":29,
+    "hst_descricao":"FGTS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":4800.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":30,
+    "hst_descricao":"ESTACIONAMENTO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":31,
+    "hst_descricao":"COMBUSTIVEL",
+    "hst_fixovariavel":"F",
+    "hst_previsao":5000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":32,
+    "hst_descricao":"OLEO DO MOTOR",
+    "hst_fixovariavel":"V",
+    "hst_previsao":200.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":33,
+    "hst_descricao":"LUBRIFICA�AO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":280.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":34,
+    "hst_descricao":"IPVA",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":35,
+    "hst_descricao":"PEDAGIO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":250.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":36,
+    "hst_descricao":"PE�AS DE MANUT. DO CAMINHAO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":1000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":37,
+    "hst_descricao":"MAO DE OBRA MANUT DO CAMINHAO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":2000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":38,
+    "hst_descricao":"FRETE PAGO SOBRE VENDA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":1000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":39,
+    "hst_descricao":"PREJUIZO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":4000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":40,
+    "hst_descricao":"IRPJ",
+    "hst_fixovariavel":"V",
+    "hst_previsao":36000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":41,
+    "hst_descricao":"FOLHA DE PAGAMENTO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":60000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":42,
+    "hst_descricao":"FERIAS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":2500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":43,
+    "hst_descricao":"13 SALARIO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":35000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":44,
+    "hst_descricao":"ALMO�O DOS FUNCIONARIOS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":5720.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":45,
+    "hst_descricao":"LANCHE COM FUNCIONARIOS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":120.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":46,
+    "hst_descricao":"CAFE DA MANHA/PADARIA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":240.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":47,
+    "hst_descricao":"UNIFORMES",
+    "hst_fixovariavel":"V",
+    "hst_previsao":600.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":48,
+    "hst_descricao":"VALE/ADIANTAMENTO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":49,
+    "hst_descricao":"PROLABORE",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":50,
+    "hst_descricao":"CURSO/TREINAMENTO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":51,
+    "hst_descricao":"MATERIAL DE ESCR./PAPELARIA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":300.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":52,
+    "hst_descricao":"MATERIAL DE SUPERMERCADO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":250.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":53,
+    "hst_descricao":"MATERIAL DE FARMACIA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":150.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":54,
+    "hst_descricao":"MATERIAL DE EMBALAGEM",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":55,
+    "hst_descricao":"MATERIAL GRAFICO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":56,
+    "hst_descricao":"MATERIAL PROMOCIONAL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":250.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":57,
+    "hst_descricao":"PLANO DE SAUDE",
+    "hst_fixovariavel":"F",
+    "hst_previsao":10000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":58,
+    "hst_descricao":"HORA EXTRA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":3000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":59,
+    "hst_descricao":"RESCISAO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":3500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":60,
+    "hst_descricao":"GAS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":45.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":61,
+    "hst_descricao":"DEDETIZA�AO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":150.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":62,
+    "hst_descricao":"JUROS BANCARIO SALDO DEV.",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":63,
+    "hst_descricao":"IOF",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":64,
+    "hst_descricao":"ENCARGOS FINANCEIROS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":65,
+    "hst_descricao":"JUROS PAG. DUPL. ATRAZADA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":66,
+    "hst_descricao":"CARTORIO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":100.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":67,
+    "hst_descricao":"JUROS DESCONTO DUPLICATA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":68,
+    "hst_descricao":"JUROS DESCONTO DE CHEQUE",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":69,
+    "hst_descricao":"TARIFAS BANCARIAS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":70,
+    "hst_descricao":"DESCONTO CARTAO CREDITO S/VENDAS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":3000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":71,
+    "hst_descricao":"DESCONTO CARTAO DEBITO S/VENDAS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":1500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":72,
+    "hst_descricao":"JUROS SOBRE EMPR. FINANCEIRO",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":73,
+    "hst_descricao":"TITULO DE CAPITALIZA�AO",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":74,
+    "hst_descricao":"SEGUROS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":600.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":75,
+    "hst_descricao":"VENDAS NAO RECEBIDA/PERDAS",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":76,
+    "hst_descricao":"CHEQUE S/ FUNDOS/NAO REC.",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":77,
+    "hst_descricao":"GRATIFICA�AO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":400.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":78,
+    "hst_descricao":"SALARIO FAMILIA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":79,
+    "hst_descricao":"PROTESTO DE CLIENTE",
+    "hst_fixovariavel":"V",
+    "hst_previsao":500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":80,
+    "hst_descricao":"VALE TRANSPORTE",
+    "hst_fixovariavel":"F",
+    "hst_previsao":4700.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":81,
+    "hst_descricao":"PAGAMENTO DE FORNECEDORES",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":82,
+    "hst_descricao":"FORNECEDOR EM ABERTO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":25000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":83,
+    "hst_descricao":"FRETE PAGO SOBRE COMPRA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":1500.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":84,
+    "hst_descricao":"CONTRATO DE MAN. AR CONDICIONADO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":87,
+    "hst_descricao":"MULTA DO CAMINHAO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":88,
+    "hst_descricao":"LOCOMO�AO(PASSAGEM BOY)",
+    "hst_fixovariavel":"V",
+    "hst_previsao":50.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":90,
+    "hst_descricao":"FESTA DE FUNCIONARIO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":3000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":91,
+    "hst_descricao":"VENDA RECEBIDA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":92,
+    "hst_descricao":"VENDA EM ABERTO",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":93,
+    "hst_descricao":"CONTRATO ADVOCATICIO.",
+    "hst_fixovariavel":"F",
+    "hst_previsao":470.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":98,
+    "hst_descricao":"REFIS COPA",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":99,
+    "hst_descricao":"TAXAS EXTRAS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":4000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":100,
+    "hst_descricao":"DESONERACAO FISCAL S/ FOLHA",
+    "hst_fixovariavel":"V",
+    "hst_previsao":12000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":101,
+    "hst_descricao":"EXAME ADM. / DEM.",
+    "hst_fixovariavel":"V",
+    "hst_previsao":200.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":102,
+    "hst_descricao":"TROCO DE CHEQUE",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":103,
+    "hst_descricao":"COLISAO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":104,
+    "hst_descricao":"CONSULTA DE CREDITO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":660.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":105,
+    "hst_descricao":"SEGURO DPVAT",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":110,
+    "hst_descricao":"CONTRIBUI�AO SOCIAL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":111,
+    "hst_descricao":"SUBSTITUI�AO TRIBUTARIA",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":112,
+    "hst_descricao":"SANGRIA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":113,
+    "hst_descricao":"FEEF FUNDO ESTADUAL DE EQUIL. FISCAL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":600.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":114,
+    "hst_descricao":"COMISSAO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":15000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":115,
+    "hst_descricao":"REBOQUE",
+    "hst_fixovariavel":"V",
+    "hst_previsao":350.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":116,
+    "hst_descricao":"ANTI VIROS",
+    "hst_fixovariavel":"V",
+    "hst_previsao":170.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":117,
+    "hst_descricao":"TARIFA DESC. DE DUPLICATA",
+    "hst_fixovariavel":"F",
+    "hst_previsao":1200.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":118,
+    "hst_descricao":"CONSORCIO",
+    "hst_fixovariavel":"F",
+    "hst_previsao":505.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":119,
+    "hst_descricao":"EMPRESTIMO",
+    "hst_fixovariavel":"V",
+    "hst_previsao":3000.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":120,
+    "hst_descricao":"MAO DE OBRA MANUTEN�AO PREDIAL",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":130,
+    "hst_descricao":"GNRE (GUIA NAC. RECOLHIMENTO TRIB. ESTADUAIS)",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":151,
+    "hst_descricao":"HISTORICO 151 ALTERADO",
+    "hst_fixovariavel":"N",
+    "hst_previsao":123.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":500,
+    "hst_descricao":"ACERTO DE SALDO DO CAIXA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":701,
+    "hst_descricao":"DEPOSITO EM C/C",
+    "hst_fixovariavel":"V",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":801,
+    "hst_descricao":"APORTE DE CAIXA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":990,
+    "hst_descricao":"ACERTO DE CONTAS C/ CLIENTE",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+,
+{
+    "hst_codigo":999,
+    "hst_descricao":"SALDO DE ENCERRAMENTO DO DIA",
+    "hst_fixovariavel":"N",
+    "hst_previsao":0.00,
+    "empresa": 2
+  }
+  ]
+}

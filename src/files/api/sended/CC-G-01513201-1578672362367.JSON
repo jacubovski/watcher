@@ -1,0 +1,150 @@
+{
+"module":"table",
+"target":"costCenter",
+"action":"bulkCostCenterCreate",
+"variables": [
+{
+    "cc_codigo":1,
+    "cc_descricao":"INSTALA�OES",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":2,
+    "cc_descricao":"TRIBUTOS",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":3,
+    "cc_descricao":"TRANSPORTES",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":4,
+    "cc_descricao":"FUNCIONARIOS",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":5,
+    "cc_descricao":"MATERIAL DE CONSUMO",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":6,
+    "cc_descricao":"DESPESAS FINANCEIRAS",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":7,
+    "cc_descricao":"INADINPLENCIA",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":8,
+    "cc_descricao":"FORNECEDORES",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":9,
+    "cc_descricao":"VENDA",
+    "cc_receitadespesa":"R",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":10,
+    "cc_descricao":"centro de custos 10",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":11,
+    "cc_descricao":"MOVIMENTO INT",
+    "cc_receitadespesa":"R",
+    "cc_relatoriocc":false,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":12,
+    "cc_descricao":"CENTRO DE CUSTOS 12",
+    "cc_receitadespesa":"R",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":13,
+    "cc_descricao":"CC 13 ALTERADO",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":false,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":16,
+    "cc_descricao":"CC 16 INCLUIDO E ALTERADO",
+    "cc_receitadespesa":"R",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":101,
+    "cc_descricao":"CENTRO 101 INCLUDIO",
+    "cc_receitadespesa":"R",
+    "cc_relatoriocc":true,
+    "cc_relatorioadm":true,
+    "empresa": 2
+  }
+,
+{
+    "cc_codigo":999,
+    "cc_descricao":"ACERTO DE SALDOS",
+    "cc_receitadespesa":"D",
+    "cc_relatoriocc":false,
+    "cc_relatorioadm":false,
+    "empresa": 2
+  }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+"module":"table",
+"target":"typePrice",
+"action":"bulkTypePriceCreate",
+"variables": [
+{
+    "prc_codigo":1,
+    "prc_descricao":"TABELA 1",
+    "prc_descontotabela":false,
+    "empresa": 2
+  }
+,
+{
+    "prc_codigo":2,
+    "prc_descricao":"TABELA 2",
+    "prc_descontotabela":true,
+    "empresa": 2
+  }
+,
+{
+    "prc_codigo":3,
+    "prc_descricao":"TABELA 3",
+    "prc_descontotabela":false,
+    "empresa": 2
+  }
+  ]
+}

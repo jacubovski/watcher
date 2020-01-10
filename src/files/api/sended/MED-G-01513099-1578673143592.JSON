@@ -1,0 +1,238 @@
+{
+"module":"table",
+"target":"unitMeas",
+"action":"bulkUnitMeasCreate",
+"variables": [
+{
+    "med_codigo":1,
+    "med_descricao":"KILO",
+    "med_abreviado":"KG",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":2,
+    "med_descricao":"UNITARIO",
+    "med_abreviado":"UN",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":3,
+    "med_descricao":"TONELADA",
+    "med_abreviado":"TN",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":4,
+    "med_descricao":"PE�A",
+    "med_abreviado":"PC",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":5,
+    "med_descricao":"METRO QUADRADO",
+    "med_abreviado":"M2",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":6,
+    "med_descricao":"CX C/1,5 m2",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":7,
+    "med_descricao":"CX C/2 m2",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":8,
+    "med_descricao":"CX C/1 m2",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":9,
+    "med_descricao":"METRO LINEAR",
+    "med_abreviado":"ML",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":11,
+    "med_descricao":"SACO",
+    "med_abreviado":"SC",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":12,
+    "med_descricao":"BARRA C/6 METROS ALTERADA",
+    "med_abreviado":"br",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":13,
+    "med_descricao":"CX C/100",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":14,
+    "med_descricao":"m2",
+    "med_abreviado":"m2",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":15,
+    "med_descricao":"MILILITROS",
+    "med_abreviado":"ML",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":16,
+    "med_descricao":"VOL.C/50.",
+    "med_abreviado":"",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":17,
+    "med_descricao":"CENTO",
+    "med_abreviado":"CT",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":21,
+    "med_descricao":"CX C/1000",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":22,
+    "med_descricao":"CX C/500",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":23,
+    "med_descricao":"MILHEIRO",
+    "med_abreviado":"MI",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":24,
+    "med_descricao":"CX C/200",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":25,
+    "med_descricao":"PAR",
+    "med_abreviado":"PR",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":26,
+    "med_descricao":"CX C/10",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":31,
+    "med_descricao":"CX C/24",
+    "med_abreviado":"CX",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":32,
+    "med_descricao":"CX C/25",
+    "med_abreviado":"",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":33,
+    "med_descricao":"JOGO",
+    "med_abreviado":"JG",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":34,
+    "med_descricao":"DUZIA",
+    "med_abreviado":"DZ",
+    "med_tipocalculo":5,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":35,
+    "med_descricao":"ROLO",
+    "med_abreviado":"RL",
+    "med_tipocalculo":4,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":96,
+    "med_descricao":"MEDIDA 96",
+    "med_abreviado":"XX",
+    "med_tipocalculo":3,
+    "empresa": 2
+  }
+,
+{
+    "med_codigo":99,
+    "med_descricao":"MEDIDA 99 INCUIDA",
+    "med_abreviado":"99",
+    "med_tipocalculo":1,
+    "empresa": 2
+  }
+  ]
+}

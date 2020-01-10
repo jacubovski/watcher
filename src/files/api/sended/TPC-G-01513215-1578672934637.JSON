@@ -1,0 +1,132 @@
+{
+"module":"table",
+"target":"customerType",
+"action":"bulkCustomerTypeCreate",
+"variables": [
+{
+    "tpc_codigo":2,
+    "tpc_descricao":"TIPO DE CLIENTE 2 ALTERADO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":3,
+    "tpc_descricao":"TIPO DE CLIENTE 3",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":4,
+    "tpc_descricao":"INDUSTRIA",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":5,
+    "tpc_descricao":"CONSTRUTORA",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":6,
+    "tpc_descricao":"SERRALHEIRO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":7,
+    "tpc_descricao":"REFRIGERA�AO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":8,
+    "tpc_descricao":"COMERCIO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":9,
+    "tpc_descricao":"INSTITUI�AO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":10,
+    "tpc_descricao":"EMPRENDIMENTOS",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":11,
+    "tpc_descricao":"SIGN",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":12,
+    "tpc_descricao":"ELEVADORES",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":13,
+    "tpc_descricao":"TRANSPORTADORAS",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":14,
+    "tpc_descricao":"GOVERNO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":15,
+    "tpc_descricao":"ENGENHARIA",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":16,
+    "tpc_descricao":"SERVI�OS",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":17,
+    "tpc_descricao":"CLUBE/E SAMBA",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":18,
+    "tpc_descricao":"REFORMAS",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":19,
+    "tpc_descricao":"CONDOMINIO",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":97,
+    "tpc_descricao":"CONSUMIDOR",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":98,
+    "tpc_descricao":"DIVERSOS",
+    "empresa": 2
+  }
+,
+{
+    "tpc_codigo":99,
+    "tpc_descricao":"OUTROS",
+    "empresa": 2
+  }
+  ]
+}

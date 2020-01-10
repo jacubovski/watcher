@@ -1,0 +1,720 @@
+{
+"module":"table",
+"target":"subType",
+"action":"bulkSubTypeCreate",
+"variables": [
+{
+    "stp_codigo":1,
+    "stp_descricao":"TUBO GALV C/R 1/2 A 3/4",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":2,
+    "stp_descricao":"TAMPAO PLASTICO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":3,
+    "stp_descricao":"TELHA GALV. OND.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":4,
+    "stp_descricao":"TUBO DIN 1 A 6",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":5,
+    "stp_descricao":"TUBO DIN 1/2 A 3/4",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":6,
+    "stp_descricao":"TUBO PAREDE 3,75 MM",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":7,
+    "stp_descricao":"SUBTIPO 7 ALTERADO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":8,
+    "stp_descricao":"SUBTIPO 8 VIA MAC LOCAL",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":9,
+    "stp_descricao":"SUBTIPO INCLUIDO PELO MAC LOCAL - 9",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":10,
+    "stp_descricao":"TUBO PAREDE 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":11,
+    "stp_descricao":"TUBO PAREDE 16",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":12,
+    "stp_descricao":"TUBO PAREDE 18",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":13,
+    "stp_descricao":"TUBO PAREDE 20",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":14,
+    "stp_descricao":"TUBO PAREDE 3,00 MM",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":15,
+    "stp_descricao":"TUBO PAREDE 4,75 MM",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":16,
+    "stp_descricao":"TUBO GALV. 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":17,
+    "stp_descricao":"TUBO ZINC. 16",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":18,
+    "stp_descricao":"TUBO GALV. C/R 1 A 6",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":19,
+    "stp_descricao":"TUBO SCH 40",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":20,
+    "stp_descricao":"BARRA CHATA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":21,
+    "stp_descricao":"BARRA REDONDA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":22,
+    "stp_descricao":"BARRA QUADRADA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":23,
+    "stp_descricao":"CANTONEIRA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":24,
+    "stp_descricao":"TEE",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":25,
+    "stp_descricao":"EIXO POLIDO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":26,
+    "stp_descricao":"ESTRELA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":28,
+    "stp_descricao":"PORTA SANFONADA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":30,
+    "stp_descricao":"VIGA U",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":31,
+    "stp_descricao":"VIGA I",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":32,
+    "stp_descricao":"VIGA W",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":33,
+    "stp_descricao":"VIGA H",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":34,
+    "stp_descricao":"VIGA ELETROS.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":40,
+    "stp_descricao":"UDC/UDC ENR 1,80",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":42,
+    "stp_descricao":"FERRO U",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":43,
+    "stp_descricao":"PAULISTA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":44,
+    "stp_descricao":"EMPOSTA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":45,
+    "stp_descricao":"TRILHO STANLEY",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":46,
+    "stp_descricao":"BAQUETE",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":47,
+    "stp_descricao":"UDC/UDC ENR 2,00",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":48,
+    "stp_descricao":"UDC/UDC ENR 2,65",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":49,
+    "stp_descricao":"UDC/UDC ENR 3,00",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":50,
+    "stp_descricao":"CHAPA GALV 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":51,
+    "stp_descricao":"CHAPA FF 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":52,
+    "stp_descricao":"CHAPA FQ 3/16 ATE 1/2",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":53,
+    "stp_descricao":"CHAPA XADREZ",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":54,
+    "stp_descricao":"CHAPA EXPANDIDA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":55,
+    "stp_descricao":"CHAPA DE ALUMINIO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":56,
+    "stp_descricao":"UDC/UDC ENR 4,75",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":60,
+    "stp_descricao":"VERGALHAO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":61,
+    "stp_descricao":"COLUNA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":62,
+    "stp_descricao":"MALHA POP",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":63,
+    "stp_descricao":"TELA TELCON",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":64,
+    "stp_descricao":"CAIXA D AGUA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":70,
+    "stp_descricao":"TELHA GALVALUME",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":71,
+    "stp_descricao":"TELHA ALUMINIO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":72,
+    "stp_descricao":"TELHA INCOLOR",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":73,
+    "stp_descricao":"TELHA FIBROC.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":74,
+    "stp_descricao":"TELHA ISOTER.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":75,
+    "stp_descricao":"TELHA GALVANIZADA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":76,
+    "stp_descricao":"CUMIEIRA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":80,
+    "stp_descricao":"DEGRAU/PAT XADREZ",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":81,
+    "stp_descricao":"DEGRAU/PAT LISO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":82,
+    "stp_descricao":"BOBINA PORTA DE A�O",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":83,
+    "stp_descricao":"BOBINA GALVANIZADA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":84,
+    "stp_descricao":"TELA METRO LIN",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":85,
+    "stp_descricao":"FITA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":86,
+    "stp_descricao":"FERRO FUNDIDO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":87,
+    "stp_descricao":"CALHAS GALV",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":88,
+    "stp_descricao":"CHAPA DE BASE",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":89,
+    "stp_descricao":"BANDEIRA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":90,
+    "stp_descricao":"CONCERTINA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":91,
+    "stp_descricao":"ZARCAO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":92,
+    "stp_descricao":"EPI",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":93,
+    "stp_descricao":"RODIZIOS/CARINHOS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":94,
+    "stp_descricao":"LAN�AS/CAST.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":95,
+    "stp_descricao":"FECHADURA/CADEADO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":97,
+    "stp_descricao":"FERRAMENTAS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":98,
+    "stp_descricao":"MAQUINAS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":99,
+    "stp_descricao":"ABRASIVOS ALTERADO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":100,
+    "stp_descricao":"SOLDAS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":101,
+    "stp_descricao":"FIXA�AO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":102,
+    "stp_descricao":"TUBO PAREDE 2,65 MM",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":104,
+    "stp_descricao":"TRINCOS/ALAVANCAS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":105,
+    "stp_descricao":"REBITES",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":106,
+    "stp_descricao":"GONZOS/DOBRAD/PINO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":107,
+    "stp_descricao":"LUBRIFICANTES",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":108,
+    "stp_descricao":"C. DE A�O/ARAME",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":109,
+    "stp_descricao":"CORDA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":110,
+    "stp_descricao":"ESTRIBO/RADIER",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":111,
+    "stp_descricao":"ALUM. FUNDIDO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":112,
+    "stp_descricao":"VIGA W DE 13 A 38 KG",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":113,
+    "stp_descricao":"VIGA W MAIOR QUE 40 KG",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":114,
+    "stp_descricao":"VIGA W MAIOR QUE 80 KG",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":123,
+    "stp_descricao":"TELHA LEITOSA",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":124,
+    "stp_descricao":"TUIBO ZINC. 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":150,
+    "stp_descricao":"BOBINA DE ALUM.",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":151,
+    "stp_descricao":"VEDA�AO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":152,
+    "stp_descricao":"CHAPA FF 16",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":153,
+    "stp_descricao":"CHAPA FF 18",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":154,
+    "stp_descricao":"CHAPA FF 20",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":155,
+    "stp_descricao":"ROLDANAS",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":156,
+    "stp_descricao":"CHAPA FF 22",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":157,
+    "stp_descricao":"CHAPA FF 24",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":158,
+    "stp_descricao":"CHAPA FF 26",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":159,
+    "stp_descricao":"CHAPA GALV 16",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":160,
+    "stp_descricao":"CHAPA GALV 18",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":161,
+    "stp_descricao":"CHAPA GALV 20",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":162,
+    "stp_descricao":"CHAPA GALV 22",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":163,
+    "stp_descricao":"CHAPA GALV 24",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":164,
+    "stp_descricao":"CHAPA GALV 26",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":165,
+    "stp_descricao":"CHAPA GALV 28",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":166,
+    "stp_descricao":"PROD DESATIVADO",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":167,
+    "stp_descricao":"TELA PAINEL",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":168,
+    "stp_descricao":"CHAPA FQ 1/8",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":169,
+    "stp_descricao":"CHAPA FQ 14",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":170,
+    "stp_descricao":"CHAPA FQ 16",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":171,
+    "stp_descricao":"TUBO GALV. S/R 1/2 A 3/4",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":172,
+    "stp_descricao":"CHAPA FQ 5/8 ATE 1.1/4",
+    "empresa": 2
+  }
+,
+{
+    "stp_codigo":501,
+    "stp_descricao":"STP 501 INCLUIDO",
+    "empresa": 2
+  }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+"module":"table",
+"target":"line",
+"action":"bulkLineCreate",
+"variables": [
+{
+    "lin_codigo":1,
+    "lin_descricao":"LINHA 1 INCLUIDA",
+    "empresa": 2
+  }
+,
+{
+    "lin_codigo":2,
+    "lin_descricao":"LINHA 2 INCLUIDA",
+    "empresa": 2
+  }
+,
+{
+    "lin_codigo":3,
+    "lin_descricao":"asdasdasdasdads",
+    "empresa": 2
+  }
+,
+{
+    "lin_codigo":4,
+    "lin_descricao":"dfsdfsdfsd",
+    "empresa": 2
+  }
+,
+{
+    "lin_codigo":6,
+    "lin_descricao":"seis pode cadastrar",
+    "empresa": 2
+  }
+,
+{
+    "lin_codigo":33,
+    "lin_descricao":"asdasdasdasd",
+    "empresa": 2
+  }
+  ]
+}
