@@ -33,7 +33,7 @@ function SubTypeActions(action, variables,fileName) {
     }
   }
 
-  const subTypeSchema = Schema.tables(this.owner, this.target, this.action);
+  const subTypeSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allSubTypes(variables) {
     try {
@@ -45,7 +45,7 @@ function SubTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { subtypes } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allSubTypes',
         values: subtypes,
       }
@@ -68,7 +68,7 @@ function SubTypeActions(action, variables,fileName) {
       const { subtype } = response.data.data;
       const { stp_codigo } = subtype;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'subType',
         values: subtype,
         code: stp_codigo,
@@ -91,7 +91,7 @@ function SubTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createSubType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createSubType',
         values: createSubType,
         code: Date.now(),
@@ -114,7 +114,7 @@ function SubTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkSubTypeCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkSubTypeCreate',
         values: bulkSubTypeCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function SubTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateSubType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateSubType',
         values: updateSubType,
         code: Date.now(),
@@ -160,7 +160,7 @@ function SubTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteSubType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteSubType',
         values: deleteSubType,
         code: Date.now(),

@@ -32,7 +32,7 @@ function CustomerTypeActions(action, variables,fileName) {
       throw new Error(error);      
     }
   }
-  const cTSchema = Schema.tables(this.owner, this.target, this.action);
+  const cTSchema = Schema.get(this.owner, this.target, this.action);
 
 
   async function allCustomerTypes(variables) {
@@ -45,7 +45,7 @@ function CustomerTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { customerTypes } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allCustomerTypes',
         values: customerTypes,
       }
@@ -69,7 +69,7 @@ function CustomerTypeActions(action, variables,fileName) {
       const { customerType } = response.data.data;
       const { tpc_codigo } = customerType;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'customerType',
         values: customerType,
         code: tpc_codigo,
@@ -92,7 +92,7 @@ function CustomerTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createCustomerType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createCustomerType',
         values: createCustomerType,
         code: Date.now(),
@@ -115,7 +115,7 @@ function CustomerTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkCustomerTypeCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkCustomerTypeCreate',
         values: bulkCustomerTypeCreate,
         code: Date.now(),
@@ -138,7 +138,7 @@ function CustomerTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateCustomerType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateCustomerType',
         values: updateCustomerType,
         code: Date.now(),
@@ -161,7 +161,7 @@ function CustomerTypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteCustomerType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteCustomerType',
         values: deleteCustomerType,
         code: Date.now(),

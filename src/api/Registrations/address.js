@@ -3,28 +3,27 @@ const WriteFile = require('../writerFiles');
 const CopyAndDeleteFile = require('../writerFiles/cpAndDelFile');
 const Schema = require('../../utils/getSchemas');
 
-function CostCenterActions(action, variables,fileName) {
+function AddressActions(action, variables,fileName) {
   this.action = action;
   this.variables = variables;
-  this.target = 'table';
-  this.owner = 'CostCenter';
+  this.target = 'registration';
+  this.owner = 'Address';
   this.fileName = fileName
-
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allCostCenters':
-          return await allCostCenters(this.variables);
-        case 'fetchCostCenter':
-          return await costCenter(this.variables);
-        case 'createCostCenter': 
-          return await createCostCenters(this.variables);
-        case 'updateCostCenter':
-          return await updateCostCenters(this.variables);
-        case 'deleteCostCenter':
-          return await deleteCostCenters(this.variables);  
-        case 'bulkCostCenterCreate':
-          return await bulkCreateCostCenters(this.variables);
+        case 'allAddress':
+          return await AllAddress(this.variables);
+        case 'fetchAddress':
+          return await Address(this.variables);
+        case 'createAddress': 
+          return await CreateAddress(this.variables);
+        case 'updateAddress':
+          return await UpdateAddress(this.variables);
+        case 'deleteAddress':
+          return await DeleteAddress(this.variables);  
+        case 'bulkAddressCreate':
+          return await BulkCreateAddress(this.variables);
         default: 
           break;
       }
@@ -33,21 +32,21 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  const costCenterSchema = Schema.get(this.owner, this.target, this.action);
+  const addressSchema = Schema.get(this.owner, this.target, this.action);
 
-  async function allCostCenters(variables) {
+  async function AllAddress(variables) {
     try {
-      const query = costCenterSchema;
+      const query = addressSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenters } = response.data.data;
+      const { addresss } = response.data.data;
       const configToWrite = {
         
-        action: 'allCostCenters',
-        values: costCenters,
+        action: 'allAddress',
+        values: addresss,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -57,43 +56,19 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
   
-  async function costCenter(variables) {
+  async function Address(variables) {
     try {
-      const query = costCenterSchema;
+      const query = addressSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenter } = response.data.data;
-      const { cc_codigo } = costCenter;
+      const { address } = response.data.data;
       const configToWrite = {
         
-        action: 'costCenter',
-        values: costCenter,
-        code: cc_codigo,
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function createCostCenters(variables) {
-    try {
-      const query = costCenterSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { createCostCenter } = response.data.data;
-      const configToWrite = {
-        
-        action: 'createCostCenter',
-        values: createCostCenter,
+        action: 'address',
+        values: address,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -104,65 +79,88 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function bulkCreateCostCenters(variables) {
+  async function CreateAddress(variables) {
     try {
-      const query = costCenterSchema;
+      const query = addressSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { createAddress } = response.data.data;
+      const configToWrite = {
+        
+        action: 'createAddress',
+        values: createAddress,
+        code: Date.now(),
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function UpdateAddress(variables) {
+    try {
+      const query = addressSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { updateAddress } = response.data.data;
+      const configToWrite = {
+        
+        action: 'updateAddress',
+        values: updateAddress,
+        code: Date.now(),
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function DeleteAddress(variables) {
+    try {
+      const query = addressSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { deleteAddress } = response.data.data;
+      const configToWrite = {
+        
+        action: 'deleteAddress',
+        values: deleteAddress,
+        code: Date.now(),
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function BulkCreateAddress(variables) {
+    try {
+      const query = addressSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables: { input: variables },
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { bulkCostCenterCreate } = response.data.data;
+      const { bulkAddressCreate } = response.data.data;
       const configToWrite = {
         
-        action: 'bulkCostCenterCreate',
-        values: bulkCostCenterCreate,
-        code: Date.now(),
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function updateCostCenters(variables) {
-    try {
-      const query = costCenterSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { updateCostCenter } = response.data.data;
-      const configToWrite = {
-        
-        action: 'updateCostCenter',
-        values: updateCostCenter,
-        code: Date.now(),
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function deleteCostCenters(variables) {
-    try {
-      const query = costCenterSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { deleteCostCenter } = response.data.data;
-      const configToWrite = {
-        
-        action: 'deleteCostCenter',
-        values: deleteCostCenter,
+        action: 'bulkAddressCreate',
+        values: bulkAddressCreate,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -174,4 +172,4 @@ function CostCenterActions(action, variables,fileName) {
   }
 }
 
-module.exports = CostCenterActions;
+module.exports = AddressActions;

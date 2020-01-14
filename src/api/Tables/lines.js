@@ -33,7 +33,7 @@ function LineActions(action, variables,fileName) {
     }
   }
 
-  const lineSchema = Schema.tables(this.owner, this.target, this.action);
+  const lineSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allLines(variables) {
     try {
@@ -45,7 +45,7 @@ function LineActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { lines } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allLines',
         values: lines,
       }
@@ -68,7 +68,7 @@ function LineActions(action, variables,fileName) {
       const { line } = response.data.data;
       const { lin_codigo } = line;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'line',
         values: line,
         code: lin_codigo,
@@ -91,7 +91,7 @@ function LineActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createLine } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createLine',
         values: createLine,
         code: Date.now(),
@@ -114,7 +114,7 @@ function LineActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkLineCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkLineCreate',
         values: bulkLineCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function LineActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateLine } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateLine',
         values: updateLine,
         code: Date.now(),
@@ -160,7 +160,7 @@ function LineActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteLine } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteLine',
         values: deleteLine,
         code: Date.now(),

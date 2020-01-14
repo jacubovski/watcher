@@ -33,7 +33,7 @@ function TypePriceActions(action, variables,fileName) {
     }
   }
 
-  const typePriceSchema = Schema.tables(this.owner, this.target, this.action);
+  const typePriceSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allTypePrices(variables) {
     try {
@@ -45,7 +45,7 @@ function TypePriceActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { typeprices } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'typeprices',
         values: typeprices,
       }
@@ -68,7 +68,7 @@ function TypePriceActions(action, variables,fileName) {
       const { typeprice } = response.data.data;
       const { prc_codigo } = typeprice;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'typePrice',
         values: typeprice,
         code: prc_codigo,
@@ -91,7 +91,7 @@ function TypePriceActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createTypePrice } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createTypePrice',
         values: createTypePrice,
         code: Date.now(),
@@ -114,7 +114,7 @@ function TypePriceActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkTypePriceCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkTypePriceCreate',
         values: bulkTypePriceCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function TypePriceActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateTypePrice } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateTypePrice',
         values: updateTypePrice,
         code: Date.now(),
@@ -160,7 +160,7 @@ function TypePriceActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteTypePrice } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteTypePrice',
         values: deleteTypePrice,
         code: Date.now(),

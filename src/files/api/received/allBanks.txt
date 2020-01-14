@@ -22,7 +22,21 @@ bco_aceite:false
 bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:O
 bco_codigo_cedente:4642614
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 1
+ end_tipo: COMERCIAL
+ end_endereco: AV DOS DEMOCRATICOS, 1743A
+ end_numero: null
+ end_complemento: 
+ end_bairro: BONSUCESSO
+ end_cep: 0
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RJ
+}
+}
 
 bco_codigo:2
 bco_codigo_banco:356
@@ -47,7 +61,21 @@ bco_aceite:false
 bco_titular:
 bco_prefixo:
 bco_codigo_cedente:
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 2
+ end_tipo: COMERCIAL
+ end_endereco: R CARDOSO DE MORAES, 221, LJ.A.
+ end_numero: null
+ end_complemento: 
+ end_bairro: BONSUCESSO
+ end_cep: 21031000
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RJ
+}
+}
 
 bco_codigo:3
 bco_codigo_banco:104
@@ -72,7 +100,21 @@ bco_aceite:false
 bco_titular:JOAQUIM DA SILVA A E SOUSA
 bco_prefixo:
 bco_codigo_cedente:
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 3
+ end_tipo: COMERCIAL
+ end_endereco: AV. DOS ITALIANOS, 375.
+ end_numero: null
+ end_complemento: 
+ end_bairro: ROCHA MIRANDA
+ end_cep: 0
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RJ
+}
+}
 
 bco_codigo:4
 bco_codigo_banco:341
@@ -97,7 +139,21 @@ bco_aceite:false
 bco_titular:DUFER
 bco_prefixo:
 bco_codigo_cedente:
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 4
+ end_tipo: COMERCIAL
+ end_endereco: 
+ end_numero: null
+ end_complemento: 
+ end_bairro: 
+ end_cep: 0
+ end_uf: 
+ end_cod_municipio: 0
+ end_municipio: 
+}
+}
 
 bco_codigo:5
 bco_codigo_banco:341
@@ -122,7 +178,21 @@ bco_aceite:false
 bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:IT
 bco_codigo_cedente:058468743
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 5
+ end_tipo: COMERCIAL
+ end_endereco: AV DOS DEMOCRATICOS 1736
+ end_numero: null
+ end_complemento: 
+ end_bairro: BONSUCESSO
+ end_cep: 21050144
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RIO DE JANEIRO
+}
+}
 
 bco_codigo:6
 bco_codigo_banco:6
@@ -147,7 +217,21 @@ bco_aceite:true
 bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:
 bco_codigo_cedente:
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 6
+ end_tipo: COMERCIAL
+ end_endereco: 
+ end_numero: null
+ end_complemento: 
+ end_bairro: 
+ end_cep: 0
+ end_uf: 
+ end_cod_municipio: 0
+ end_municipio: 
+}
+}
 
 bco_codigo:11
 bco_codigo_banco:33
@@ -172,7 +256,21 @@ bco_aceite:false
 bco_titular:
 bco_prefixo:
 bco_codigo_cedente:35433820
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 11
+ end_tipo: COMERCIAL
+ end_endereco: DIOANDRADE@SANTANDER.COM.BR ISRAEL.SANTOS@SAN
+ end_numero: null
+ end_complemento: 
+ end_bairro: 
+ end_cep: 0
+ end_uf: 
+ end_cod_municipio: 0
+ end_municipio: 
+}
+}
 
 bco_codigo:21
 bco_codigo_banco:123
@@ -197,7 +295,21 @@ bco_aceite:true
 bco_titular:MICHEL JACU
 bco_prefixo:PREFX
 bco_codigo_cedente:054018553
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 21
+ end_tipo: COMERCIAL
+ end_endereco: 
+ end_numero: null
+ end_complemento: 
+ end_bairro: 
+ end_cep: 0
+ end_uf: 
+ end_cod_municipio: 0
+ end_municipio: 
+}
+}
 
 bco_codigo:35
 bco_codigo_banco:345
@@ -222,7 +334,21 @@ bco_aceite:true
 bco_titular:?LTY,L?ET,Y?LETY?LETYN
 bco_prefixo:35235
 bco_codigo_cedente:2352352352
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 35
+ end_tipo: COMERCIAL
+ end_endereco: 
+ end_numero: null
+ end_complemento: 
+ end_bairro: 
+ end_cep: 0
+ end_uf: 
+ end_cod_municipio: 0
+ end_municipio: 
+}
+}
 
 bco_codigo:50
 bco_codigo_banco:104
@@ -247,7 +373,21 @@ bco_aceite:false
 bco_titular:
 bco_prefixo:
 bco_codigo_cedente:
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 50
+ end_tipo: COMERCIAL
+ end_endereco: RUA CARDOSO DE MORAIS 106
+ end_numero: null
+ end_complemento: 
+ end_bairro: BONSUCESSO
+ end_cep: 0
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RIO DE JANEIRO
+}
+}
 
 bco_codigo:76
 bco_codigo_banco:237
@@ -272,6 +412,20 @@ bco_aceite:true
 bco_titular:MICHEL JACUBOVSKI
 bco_prefixo:BRADE
 bco_codigo_cedente:1234567890
-bco_endereco:
+endereco{
+1: {
+ end_origem: BANCOS
+ end_codigo_origem: 76
+ end_tipo: COMERCIAL
+ end_endereco: RUA VOLUNTATIOS DA PATRIA 50
+ end_numero: null
+ end_complemento: 
+ end_bairro: BOTFOGO
+ end_cep: 27888000
+ end_uf: RJ
+ end_cod_municipio: 0
+ end_municipio: RIO DE JANEIRO
+}
+}
 
 }

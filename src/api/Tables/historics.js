@@ -33,7 +33,7 @@ function HistoricActions(action, variables,fileName) {
     }
   }
 
-  const historicSchema = Schema.tables(this.owner, this.target, this.action);
+  const historicSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allHistorics(variables) {
     try {
@@ -45,7 +45,7 @@ function HistoricActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { historics } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allHistorics',
         values: historics,
       }
@@ -68,7 +68,7 @@ function HistoricActions(action, variables,fileName) {
       const { historic } = response.data.data;
       const { hst_codigo } = historic;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'historic',
         values: historic,
         code: hst_codigo,
@@ -91,7 +91,7 @@ function HistoricActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createHistoric } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createHistoric',
         values: createHistoric,
         code: Date.now(),
@@ -114,7 +114,7 @@ function HistoricActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkHistoricCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkHistoricCreate',
         values: bulkHistoricCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function HistoricActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateHistoric } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateHistoric',
         values: updateHistoric,
         code: Date.now(),
@@ -160,7 +160,7 @@ function HistoricActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteHistoric } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteHistoric',
         values: deleteHistoric,
         code: Date.now(),

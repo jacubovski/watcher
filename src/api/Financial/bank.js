@@ -33,7 +33,7 @@ function BankActions(action, variables,fileName) {
     }
   }
 
-  const bankSchema = Schema.financial(this.owner, this.target, this.action);
+  const bankSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allBanks(variables) {
     try {
@@ -45,7 +45,7 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { banks } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allBanks',
         values: banks,
       }
@@ -68,7 +68,7 @@ function BankActions(action, variables,fileName) {
       const { bank } = response.data.data;
       const { bco_codigo } = bank;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bank',
         values: bank,
         code: bco_codigo,
@@ -91,7 +91,7 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createBank } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createBank',
         values: createBank,
         code: Date.now(),
@@ -114,7 +114,7 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBankCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkBankCreate',
         values: bulkBankCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateBank } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateBank',
         values: updateBank,
         code: Date.now(),
@@ -160,7 +160,7 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBank } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteBank',
         values: deleteBank,
         code: Date.now(),

@@ -33,7 +33,7 @@ function UnitMeasActions(action, variables,fileName) {
     }
   }
 
-  const unitMeasSchema = Schema.tables(this.owner, this.target, this.action);
+  const unitMeasSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allUnitMeass(variables) {
     try {
@@ -45,7 +45,7 @@ function UnitMeasActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { unitmeass } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'unitmeass',
         values: unitmeass,
       }
@@ -68,7 +68,7 @@ function UnitMeasActions(action, variables,fileName) {
       const { unitmeas } = response.data.data;
       const { med_codigo } = unitmeas;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'unitmeas',
         values: unitmeas,
         code: med_codigo,
@@ -91,7 +91,7 @@ function UnitMeasActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createUnitMeas } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createUnitMeas',
         values: createUnitMeas,
         code: Date.now(),
@@ -114,7 +114,7 @@ function UnitMeasActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkUnitMeasCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkUnitMeasCreate',
         values: bulkUnitMeasCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function UnitMeasActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateUnitMeas } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateUnitMeas',
         values: updateUnitMeas,
         code: Date.now(),
@@ -160,7 +160,7 @@ function UnitMeasActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteUnitMeas } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteUnitMeas',
         values: deleteUnitMeas,
         code: Date.now(),

@@ -33,7 +33,7 @@ function CfopActions(action, variables,fileName) {
     }
   }
 
-  const cfopSchema = Schema.tables(this.owner, this.target, this.action);
+  const cfopSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allCfops(variables) {
     try {
@@ -45,7 +45,7 @@ function CfopActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { cfops } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allCfops',
         values: cfops,
       }
@@ -68,7 +68,7 @@ function CfopActions(action, variables,fileName) {
       const { cfop } = response.data.data;
       const { cfop_codigo } = cfop;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'cfop',
         values: cfop,
         code: cfop_codigo,
@@ -91,7 +91,7 @@ function CfopActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createCfop } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createCfop',
         values: createCfop,
         code: Date.now(),
@@ -114,7 +114,7 @@ function CfopActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkCfopCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkCfopCreate',
         values: bulkCfopCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function CfopActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateCfop } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateCfop',
         values: updateCfop,
         code: Date.now(),
@@ -160,7 +160,7 @@ function CfopActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteCfop } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteCfop',
         values: deleteCfop,
         code: Date.now(),

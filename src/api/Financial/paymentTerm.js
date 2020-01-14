@@ -3,28 +3,27 @@ const WriteFile = require('../writerFiles');
 const CopyAndDeleteFile = require('../writerFiles/cpAndDelFile');
 const Schema = require('../../utils/getSchemas');
 
-function CostCenterActions(action, variables,fileName) {
+function PaymentTermActions(action, variables,fileName) {
   this.action = action;
   this.variables = variables;
-  this.target = 'table';
-  this.owner = 'CostCenter';
+  this.target = 'financial';
+  this.owner = 'PaymentTerm';
   this.fileName = fileName
-
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allCostCenters':
-          return await allCostCenters(this.variables);
-        case 'fetchCostCenter':
-          return await costCenter(this.variables);
-        case 'createCostCenter': 
-          return await createCostCenters(this.variables);
-        case 'updateCostCenter':
-          return await updateCostCenters(this.variables);
-        case 'deleteCostCenter':
-          return await deleteCostCenters(this.variables);  
-        case 'bulkCostCenterCreate':
-          return await bulkCreateCostCenters(this.variables);
+        case 'allPaymentTerms':
+          return await allPaymentTerms(this.variables);
+        case 'fetchPaymentTerm':
+          return await paymentTerm(this.variables);
+        case 'createPaymentTerm': 
+          return await createPaymentTerm(this.variables);
+        case 'updatePaymentTerm':
+          return await updatePaymentTerm(this.variables);
+        case 'deletePaymentTerm':
+          return await deletePaymentTerm(this.variables);  
+        case 'bulkPaymentTermCreate':
+          return await bulkCreatePaymentTerm(this.variables);
         default: 
           break;
       }
@@ -33,21 +32,21 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  const costCenterSchema = Schema.get(this.owner, this.target, this.action);
+  const paymentTermSchema = Schema.get(this.owner, this.target, this.action);
 
-  async function allCostCenters(variables) {
+  async function allPaymentTerms(variables) {
     try {
-      const query = costCenterSchema;
+      const query = paymentTermSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenters } = response.data.data;
+      const { paymentTerms } = response.data.data;
       const configToWrite = {
         
-        action: 'allCostCenters',
-        values: costCenters,
+        action: 'allPaymentTerms',
+        values: paymentTerms,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -57,21 +56,21 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
   
-  async function costCenter(variables) {
+  async function paymentTerm(variables) {
     try {
-      const query = costCenterSchema;
+      const query = paymentTermSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenter } = response.data.data;
-      const { cc_codigo } = costCenter;
+      const { paymentTerm } = response.data.data;
+      const { ppg_codigo } = paymentTerm;
       const configToWrite = {
         
-        action: 'costCenter',
-        values: costCenter,
-        code: cc_codigo,
+        action: 'paymentTerm',
+        values: paymentTerm,
+        code: ppg_codigo,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -81,19 +80,19 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function createCostCenters(variables) {
+  async function createPaymentTerm(variables) {
     try {
-      const query = costCenterSchema;
+      const query = paymentTermSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { createCostCenter } = response.data.data;
+      const { createPaymentTerm } = response.data.data;
       const configToWrite = {
         
-        action: 'createCostCenter',
-        values: createCostCenter,
+        action: 'createPaymentTerm',
+        values: createPaymentTerm,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -104,65 +103,64 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function bulkCreateCostCenters(variables) {
+  async function updatePaymentTerm(variables) {
     try {
-      const query = costCenterSchema;
+      const query = paymentTermSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { updatePaymentTerm } = response.data.data;
+      const configToWrite = {
+        action: 'updatePaymentTerm',
+        values: updatePaymentTerm,
+        code: Date.now(),
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function deletePaymentTerm(variables) {
+    try {
+      const query = paymentTermSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { deletePaymentTerm } = response.data.data;
+      const configToWrite = {
+        
+        action: 'deletePaymentTerm',
+        values: deletePaymentTerm,
+        code: Date.now(),
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function bulkCreatePaymentTerm(variables) {
+    try {
+      const query = paymentTermSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables: { input: variables },
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { bulkCostCenterCreate } = response.data.data;
+      const { bulkPaymentTermCreate } = response.data.data;
       const configToWrite = {
         
-        action: 'bulkCostCenterCreate',
-        values: bulkCostCenterCreate,
-        code: Date.now(),
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function updateCostCenters(variables) {
-    try {
-      const query = costCenterSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { updateCostCenter } = response.data.data;
-      const configToWrite = {
-        
-        action: 'updateCostCenter',
-        values: updateCostCenter,
-        code: Date.now(),
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function deleteCostCenters(variables) {
-    try {
-      const query = costCenterSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { deleteCostCenter } = response.data.data;
-      const configToWrite = {
-        
-        action: 'deleteCostCenter',
-        values: deleteCostCenter,
+        action: 'bulkPaymentTermCreate',
+        values: bulkPaymentTermCreate,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -174,4 +172,4 @@ function CostCenterActions(action, variables,fileName) {
   }
 }
 
-module.exports = CostCenterActions;
+module.exports = PaymentTermActions;

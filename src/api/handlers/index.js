@@ -1,6 +1,5 @@
 const fs = require('fs');
 const apiActionHandlers = require('./apiActionsHandlers');
-// const path = require('path');
 
 module.exports = {
   readFiles(pth) {

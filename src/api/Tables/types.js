@@ -33,7 +33,7 @@ function TypeActions(action, variables,fileName) {
     }
   }
 
-  const typeSchema = Schema.tables(this.owner, this.target, this.action);
+  const typeSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allTypes(variables) {
     try {
@@ -45,7 +45,7 @@ function TypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { types } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allTypes',
         values: types,
       }
@@ -68,7 +68,7 @@ function TypeActions(action, variables,fileName) {
       const { type } = response.data.data;
       const { tp_codigo } = type;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'Type',
         values: type,
         code: tp_codigo,
@@ -91,7 +91,7 @@ function TypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createType',
         values: createType,
         code: Date.now(),
@@ -114,7 +114,7 @@ function TypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkTypeCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkTypeCreate',
         values: bulkTypeCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function TypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateType',
         values: updateType,
         code: Date.now(),
@@ -160,7 +160,7 @@ function TypeActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteType } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteType',
         values: deleteType,
         code: Date.now(),

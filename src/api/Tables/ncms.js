@@ -33,7 +33,7 @@ function NcmActions(action, variables,fileName) {
     }
   }
 
-  const ncmSchema = Schema.tables(this.owner, this.target, this.action);
+  const ncmSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allNcms(variables) {
     try {
@@ -45,7 +45,7 @@ function NcmActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { ncms } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allNcms',
         values: ncms,
       }
@@ -68,7 +68,7 @@ function NcmActions(action, variables,fileName) {
       const { ncm } = response.data.data;
       const { ncm_codigo } = ncm;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'ncm',
         values: ncm,
         code: ncm_codigo,
@@ -91,7 +91,7 @@ function NcmActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createNcm } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createNcm',
         values: createNcm,
         code: Date.now(),
@@ -114,7 +114,7 @@ function NcmActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkNcmCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkNcmCreate',
         values: bulkNcmCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function NcmActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateNcm } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateNcm',
         values: updateNcm,
         code: Date.now(),
@@ -160,7 +160,7 @@ function NcmActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteNcm } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteNcm',
         values: deleteNcm,
         code: Date.now(),

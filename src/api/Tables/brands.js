@@ -33,7 +33,7 @@ function BrandActions(action, variables,fileName) {
     }
   }
 
-  const brnadSchema = Schema.tables(this.owner, this.target, this.action);
+  const brnadSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allBrands(variables) {
     try {
@@ -45,7 +45,7 @@ function BrandActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { brands } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'allBrands',
         values: brands,
       }
@@ -68,7 +68,7 @@ function BrandActions(action, variables,fileName) {
       const { brand } = response.data.data;
       const { mrc_codigo } = brand;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'brand',
         values: brand,
         code: mrc_codigo,
@@ -91,7 +91,7 @@ function BrandActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createBrand } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'createBrand',
         values: createBrand,
         code: Date.now(),
@@ -114,7 +114,7 @@ function BrandActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBrandCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'bulkBrandCreate',
         values: bulkBrandCreate,
         code: Date.now(),
@@ -137,7 +137,7 @@ function BrandActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateBrand } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'updateBrand',
         values: updateBrand,
         code: Date.now(),
@@ -160,7 +160,7 @@ function BrandActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBrand } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
+        
         action: 'deleteBrand',
         values: deleteBrand,
         code: Date.now(),

@@ -3,28 +3,28 @@ const WriteFile = require('../writerFiles');
 const CopyAndDeleteFile = require('../writerFiles/cpAndDelFile');
 const Schema = require('../../utils/getSchemas');
 
-function CostCenterActions(action, variables,fileName) {
+function BillsToPayActions(action, variables,fileName) {
   this.action = action;
   this.variables = variables;
-  this.target = 'table';
-  this.owner = 'CostCenter';
+  this.target = 'financial';
+  this.owner = 'BillsToPay';
   this.fileName = fileName
 
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allCostCenters':
-          return await allCostCenters(this.variables);
-        case 'fetchCostCenter':
-          return await costCenter(this.variables);
-        case 'createCostCenter': 
-          return await createCostCenters(this.variables);
-        case 'updateCostCenter':
-          return await updateCostCenters(this.variables);
-        case 'deleteCostCenter':
-          return await deleteCostCenters(this.variables);  
-        case 'bulkCostCenterCreate':
-          return await bulkCreateCostCenters(this.variables);
+        case 'allBillsToPays':
+          return await allBillsToPays(this.variables);
+        case 'fetchBillsToPay':
+          return await billsToPay(this.variables);
+        case 'createBillsToPay': 
+          return await createBillsToPay(this.variables);
+        case 'updateBillsToPay':
+          return await updateBillsToPay(this.variables);
+        case 'deleteBillsToPay':
+          return await deleteBillsToPay(this.variables);  
+        case 'bulkBillsToPayCreate':
+          return await bulkCreateBillsToPay(this.variables);
         default: 
           break;
       }
@@ -33,21 +33,20 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  const costCenterSchema = Schema.get(this.owner, this.target, this.action);
+  const billsToPaySchema = Schema.get(this.owner, this.target, this.action);
 
-  async function allCostCenters(variables) {
+  async function allBillsToPays(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenters } = response.data.data;
+      const { billsToPays } = response.data.data;
       const configToWrite = {
-        
-        action: 'allCostCenters',
-        values: costCenters,
+        action: 'allBillsToPays',
+        values: billsToPays,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -57,21 +56,20 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
   
-  async function costCenter(variables) {
+  async function billsToPay(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { costCenter } = response.data.data;
-      const { cc_codigo } = costCenter;
+      const { billsToPay } = response.data.data;
+      const { cpg_contador } = billsToPay;
       const configToWrite = {
-        
-        action: 'costCenter',
-        values: costCenter,
-        code: cc_codigo,
+        action: 'billsToPay',
+        values: billsToPay,
+        code: cpg_contador,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -81,19 +79,18 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function createCostCenters(variables) {
+  async function createBillsToPay(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { createCostCenter } = response.data.data;
+      const { createBillsToPay } = response.data.data;
       const configToWrite = {
-        
-        action: 'createCostCenter',
-        values: createCostCenter,
+        action: 'createBillsToPay',
+        values: createBillsToPay,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -104,19 +101,18 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function bulkCreateCostCenters(variables) {
+  async function bulkCreateBillsToPay(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables: { input: variables },
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { bulkCostCenterCreate } = response.data.data;
+      const { bulkBillsToPayCreate } = response.data.data;
       const configToWrite = {
-        
-        action: 'bulkCostCenterCreate',
-        values: bulkCostCenterCreate,
+        action: 'bulkBillsToPayCreate',
+        values: bulkBillsToPayCreate,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -127,19 +123,18 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function updateCostCenters(variables) {
+  async function updateBillsToPay(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { updateCostCenter } = response.data.data;
+      const { updateBillsToPay } = response.data.data;
       const configToWrite = {
-        
-        action: 'updateCostCenter',
-        values: updateCostCenter,
+        action: 'updateBillsToPay',
+        values: updateBillsToPay,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -150,19 +145,18 @@ function CostCenterActions(action, variables,fileName) {
     }
   }
 
-  async function deleteCostCenters(variables) {
+  async function deleteBillsToPay(variables) {
     try {
-      const query = costCenterSchema;
+      const query = billsToPaySchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { deleteCostCenter } = response.data.data;
+      const { deleteBillsToPay } = response.data.data;
       const configToWrite = {
-        
-        action: 'deleteCostCenter',
-        values: deleteCostCenter,
+        action: 'deleteBillsToPay',
+        values: deleteBillsToPay,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -174,4 +168,4 @@ function CostCenterActions(action, variables,fileName) {
   }
 }
 
-module.exports = CostCenterActions;
+module.exports = BillsToPayActions;

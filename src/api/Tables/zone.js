@@ -33,7 +33,7 @@ function ZoneActions(action, variables,fileName) {
     }
   }
 
-  const zoneSchema = Schema.tables(this.owner, this.target, this.action);
+  const zoneSchema = Schema.get(this.owner, this.target, this.action);
 
   async function allZones(variables) {
     try {
@@ -45,7 +45,6 @@ function ZoneActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { zones } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
         action: 'zones',
         values: zones,
       }
@@ -68,7 +67,6 @@ function ZoneActions(action, variables,fileName) {
       const { zone } = response.data.data;
       const { area_codigo } = zone;
       const configToWrite = {
-        totalFields: 2,
         action: 'zone',
         values: zone,
         code: area_codigo,
@@ -91,7 +89,6 @@ function ZoneActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createZone } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
         action: 'createZone',
         values: createZone,
         code: Date.now(),
@@ -114,7 +111,6 @@ function ZoneActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkZoneCreate } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
         action: 'bulkZoneCreate',
         values: bulkZoneCreate,
         code: Date.now(),
@@ -137,7 +133,6 @@ function ZoneActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateZone } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
         action: 'updateZone',
         values: updateZone,
         code: Date.now(),
@@ -160,7 +155,6 @@ function ZoneActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteZone } = response.data.data;
       const configToWrite = {
-        totalFields: 2,
         action: 'deleteZone',
         values: deleteZone,
         code: Date.now(),

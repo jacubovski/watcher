@@ -10,6 +10,9 @@ async function selectModule(...args) {
       case 'financial':
         const handlerFinancial = require('../Financial');
         return await handlerFinancial.whatTarget(target, action, variables,fileName);
+      case 'registration':
+        const handlerRegistration = require('../Registrations');
+        return await handlerRegistration.whatTarget(target, action, variables,fileName);
       default:
         break;
     }
