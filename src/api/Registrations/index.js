@@ -18,7 +18,12 @@ module.exports = {
           const Provider = require('./providers');
           const providers = new Provider(action, variables, fileName);
           const resProvider = await providers.selectAndExecuteAction();
-          return resProvider;  
+          return resProvider;
+        case 'employee':
+          const Employees = require('./employee');
+          const employees = new Employees(action, variables, fileName);
+          const resEmployees = await employees.selectAndExecuteAction();
+          return resEmployees;  
         default:
           break;
       }

@@ -1,6 +1,7 @@
 const { customerFetchFields, customerInput, customerParams } = require('./fields/customers.fields');
 const { addressFetchFields, addressInput, addressParams } = require('./fields/address.fields');
 const { providerFetchFields, providerInput, providerParams } = require('./fields/providers.fields');
+const { employeeFetchFields, employeeInput, employeeParams } = require('./fields/employees.fields');
 
 module.exports = {
   Address: {
@@ -65,6 +66,31 @@ module.exports = {
       provider(code: $code, company: $company) {
         ${providerFetchFields}
       }
+    }`,
+  },
+  Employee: {
+    createEmployee:`mutation CreateEmployee($func_codigo: Int,$company: Int!, ${employeeParams}){
+      createEmployee(input:{
+        func_codigo: $func_codigo
+        ${employeeInput}
+        empresa: $company
+      }){
+        ${employeeFetchFields}
+      }
+    }`,
+    bulkEmployeeCreate:`mutation bulkEmployeeCreate($input:[EmployeesCreateInput!]!){
+      bulkEmployeeCreate(input: $input)
+    }`,
+    updateEmployee:`mutation UpdateEmployee($from: String,$code: Int,$company: Int,${employeeParams}){
+      updateEmployee(from: $from,code: $code,company: $company,input:{${employeeInput}}){
+        ${employeeFetchFields}
+      }
+    }`,
+    deleteEmployee:`mutation DelteEmployee($code: Int,$from: String,$company:Int!){
+      deleteEmployee(code: $code,from: $from,company:$company)
+    }`,
+    fetchEmployee:`query FetchEmployee($code: Int!, $company: Int!) {
+      employee(code: $code, company: $company){${employeeFetchFields}}
     }`,
   }
 }
