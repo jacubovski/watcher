@@ -13,7 +13,12 @@ module.exports = {
           const Customer = require('./customers');
           const customers = new Customer(action, variables, fileName);
           const resCustomer = await customers.selectAndExecuteAction();
-          return resCustomer;  
+          return resCustomer;
+        case 'provider':
+          const Provider = require('./providers');
+          const providers = new Provider(action, variables, fileName);
+          const resProvider = await providers.selectAndExecuteAction();
+          return resProvider;  
         default:
           break;
       }
