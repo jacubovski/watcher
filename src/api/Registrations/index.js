@@ -9,6 +9,11 @@ module.exports = {
           const address = new Address(action, variables, fileName);
           const resAddress = await address.selectAndExecuteAction();
           return resAddress;
+        case 'customer':
+          const Customer = require('./customers');
+          const customers = new Customer(action, variables, fileName);
+          const resCustomer = await customers.selectAndExecuteAction();
+          return resCustomer;  
         default:
           break;
       }

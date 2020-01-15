@@ -3,27 +3,27 @@ const WriteFile = require('../writerFiles');
 const CopyAndDeleteFile = require('../writerFiles/cpAndDelFile');
 const Schema = require('../../utils/getSchemas');
 
-function AddressActions(action, variables,fileName) {
+function CustomerActions(action, variables,fileName) {
   this.action = action;
   this.variables = variables;
   this.target = 'registration';
-  this.owner = 'Address';
+  this.owner = 'Customer';
   this.fileName = fileName
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allAddress':
-          return await AllAddress(this.variables);
-        case 'fetchAddress':
-          return await address(this.variables);
-        case 'createAddress': 
-          return await CreateAddress(this.variables);
-        case 'updateAddress':
-          return await UpdateAddress(this.variables);
-        case 'deleteAddress':
-          return await DeleteAddress(this.variables);  
-        case 'bulkAddressCreate':
-          return await BulkCreateAddress(this.variables);
+        case 'allCustomer':
+          return await AllCustomers(this.variables);
+        case 'fetchCustomer':
+          return await customer(this.variables);
+        case 'createCustomer': 
+          return await CreateCustomer(this.variables);
+        case 'updateCustomer':
+          return await UpdateCustomer(this.variables);
+        case 'deleteCustomer':
+          return await DeleteCustomer(this.variables);  
+        case 'bulkCustomerCreate':
+          return await BulkCreateCustomer(this.variables);
         default: 
           break;
       }
@@ -32,20 +32,20 @@ function AddressActions(action, variables,fileName) {
     }
   }
 
-  const addressSchema = Schema.get(this.owner, this.target, this.action);
+  const customerSchema = Schema.get(this.owner, this.target, this.action);
 
-  async function AllAddress(variables) {
+  async function AllCustomers(variables) {
     try {
-      const query = addressSchema;
+      const query = customerSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { addresss } = response.data.data;
+      const { customers } = response.data.data;
       const configToWrite = {
-        action: 'allAddress',
-        values: addresss,
+        action: 'allCustomers',
+        values: customers,
       }
       WriteFile.handler(configToWrite);
       CopyAndDeleteFile.handler(fileName);
@@ -55,18 +55,41 @@ function AddressActions(action, variables,fileName) {
     }
   }
   
-  async function address(variables) {
+  async function customer(variables) {
     try {
-      const query = addressSchema;
+      const query = customerSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { address } = response.data.data;
+      const { customer } = response.data.data;
+      const { cli_codigo } = customer;
       const configToWrite = {
-        action: 'address',
-        values: address,
+        action: 'customer',
+        values: customer,
+        code: cli_codigo,
+      }
+      WriteFile.handler(configToWrite);
+      CopyAndDeleteFile.handler(fileName);
+      return { code: 200, status: 'success' }
+    } catch (err) {
+      return { code: 500, status: `Error: ${err.message}` };
+    }
+  }
+
+  async function CreateCustomer(variables) {
+    try {
+      const query = customerSchema;
+      const response = await axiosAuth.post('/macweb', {
+        query,
+        variables,
+      });
+      if (response.data.errors) throw new Error(response.data.errors);
+      const { createCustomer } = response.data.data;
+      const configToWrite = {
+        action: 'createCustomer',
+        values: createCustomer,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -77,18 +100,18 @@ function AddressActions(action, variables,fileName) {
     }
   }
 
-  async function CreateAddress(variables) {
+  async function UpdateCustomer(variables) {
     try {
-      const query = addressSchema;
+      const query = customerSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { createAddress } = response.data.data;
+      const { updateCustomer } = response.data.data;
       const configToWrite = {
-        action: 'createAddress',
-        values: createAddress,
+        action: 'updateCustomer',
+        values: updateCustomer,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -99,18 +122,18 @@ function AddressActions(action, variables,fileName) {
     }
   }
 
-  async function UpdateAddress(variables) {
+  async function DeleteCustomer(variables) {
     try {
-      const query = addressSchema;
+      const query = customerSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables,
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { updateAddress } = response.data.data;
+      const { deleteCustomer } = response.data.data;
       const configToWrite = {
-        action: 'updateAddress',
-        values: updateAddress,
+        action: 'deleteCustomer',
+        values: deleteCustomer,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -121,40 +144,18 @@ function AddressActions(action, variables,fileName) {
     }
   }
 
-  async function DeleteAddress(variables) {
+  async function BulkCreateCustomer(variables) {
     try {
-      const query = addressSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { deleteAddress } = response.data.data;
-      const configToWrite = {
-        action: 'deleteAddress',
-        values: deleteAddress,
-        code: Date.now(),
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-
-  async function BulkCreateAddress(variables) {
-    try {
-      const query = addressSchema;
+      const query = customerSchema;
       const response = await axiosAuth.post('/macweb', {
         query,
         variables: { input: variables },
       });
       if (response.data.errors) throw new Error(response.data.errors);
-      const { bulkAddressCreate } = response.data.data;
+      const { bulkCustomerCreate } = response.data.data;
       const configToWrite = {
-        action: 'bulkAddressCreate',
-        values: bulkAddressCreate,
+        action: 'bulkCustomerCreate',
+        values: bulkCustomerCreate,
         code: Date.now(),
       }
       WriteFile.handler(configToWrite);
@@ -166,4 +167,4 @@ function AddressActions(action, variables,fileName) {
   }
 }
 
-module.exports = AddressActions;
+module.exports = CustomerActions;
