@@ -28,7 +28,17 @@ module.exports = {
           const BillsToPay = require('./billsToPay');
           const billsToPay = new BillsToPay(action, variables, fileName);
           const resBillsToPay = await billsToPay.selectAndExecuteAction();
-          return resBillsToPay;  
+          return resBillsToPay;
+        case 'billsToReceive':
+          const BillsToReceive = require('./billsToReceive');
+          const billsToReceive = new BillsToReceive(action, variables, fileName);
+          const resBillsToReceive = await billsToReceive.selectAndExecuteAction();
+          return resBillsToReceive;  
+        case 'paymentForm':
+          const PaymentForm = require('./paymentForm');
+          const paymentForm = new PaymentForm(action, variables, fileName);
+          const resPaymentForm = await paymentForm.selectAndExecuteAction();
+          return resPaymentForm;
         default:
           break;
       }
