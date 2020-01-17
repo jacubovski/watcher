@@ -1,6 +1,7 @@
 require('dotenv').config()
 const axios = require('axios');
 const CryptoJS = require('crypto-js');
+const NotificationOS = require('../configs/notifierOS');
 let count = 1;
 const axiosAuth = axios.create({
   baseURL: 'http://127.0.0.1:3000',
@@ -38,11 +39,20 @@ const login = () => {
       resolve(token);
     }).catch(err => {
       if( err.message.match("Cannot read property 'data' of undefined")) {
-        console.log(`Sem conexão com a api. Tentativa de Conexão ${count}...`)
+        const title = 'Atenção! Problemas no MacWatcher';
+        const msg = 'Problema ao se Conectar a API de Integração com o MacWeb. Favor entrar em contato com o suporte.'
+        const notifier = new NotificationOS(title, msg);
+        if (count <= 10) {
+          console.log(`Sem conexão com a api. Tentativa de Conexão ${count}...`)
+          setTimeout(() => {
+            login();
+          }, 6000);
+        } else {
+          notifier.sendNotification();
+          count = 1;
+        }
         count++;
-        setTimeout(() => {
-          login()
-        }, 10000)
+
       }
     });
   });
