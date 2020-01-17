@@ -23,7 +23,12 @@ module.exports = {
           const Employees = require('./employee');
           const employees = new Employees(action, variables, fileName);
           const resEmployees = await employees.selectAndExecuteAction();
-          return resEmployees;  
+          return resEmployees; 
+        case 'salesman':
+          const Salesman = require('./salesmans');
+          const salesmans = new Salesman(action, variables, fileName);
+          const resSalesmans = await salesmans.selectAndExecuteAction();
+          return resSalesmans;  
         default:
           break;
       }

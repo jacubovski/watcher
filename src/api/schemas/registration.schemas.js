@@ -2,6 +2,7 @@ const { customerFetchFields, customerInput, customerParams } = require('./fields
 const { addressFetchFields, addressInput, addressParams } = require('./fields/address.fields');
 const { providerFetchFields, providerInput, providerParams } = require('./fields/providers.fields');
 const { employeeFetchFields, employeeInput, employeeParams } = require('./fields/employees.fields');
+const { salesmanFetchFields, salesmanInput, salesmanParams } = require('./fields/salesmans.fields');
 
 module.exports = {
   Address: {
@@ -91,6 +92,29 @@ module.exports = {
     }`,
     fetchEmployee:`query FetchEmployee($code: Int!, $company: Int!) {
       employee(code: $code, company: $company){${employeeFetchFields}}
+    }`,
+  },
+  Salesman: {
+    createSalesman:`mutation CreateSalesman($vnd_codigo: Int!,${salesmanParams},$company: Int!){
+      createSalesman(input:{vnd_codigo:$vnd_codigo ${salesmanInput} empresa: $company}){
+        ${salesmanFetchFields}
+      }
+    }`,
+    bulkSalesmanCreate:`mutation BulkSalesmanCreate($input:[SalesmanCreateInput!]!){
+      bulkSalesmanCreate(input: $input)
+    }`,
+    updateSalesman:`mutation UpdateSalesman($from: String,$code: Int,${salesmanParams},$company: Int){
+      updateSalesman(from: $from,code: $code,company: $company,input:{${salesmanInput}}){
+          ${salesmanFetchFields}
+        }
+    }`,
+    deleteSalesman:`mutation DelteSalesman($code: Int,$from: String,$company:Int!){
+      deleteSalesman(code: $code,from: $from,company:$company)
+    }`,
+    fetchSalesman:`query Salesman($code: Int!, $company: Int!) {
+      salesman(code: $code, company: $company) {
+        ${salesmanFetchFields}
+      }
     }`,
   }
 }

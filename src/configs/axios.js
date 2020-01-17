@@ -1,6 +1,7 @@
 require('dotenv').config()
 const axios = require('axios');
 const CryptoJS = require('crypto-js');
+let count = 1;
 const axiosAuth = axios.create({
   baseURL: 'http://127.0.0.1:3000',
   // http://127.0.0.1:3000   https://www.apimastersoft.com.br
@@ -36,7 +37,13 @@ const login = () => {
       }, err => Promise.reject(err));
       resolve(token);
     }).catch(err => {
-      throw new Error(err);
+      if( err.message.match("Cannot read property 'data' of undefined")) {
+        console.log(`Sem conexão com a api. Tentativa de Conexão ${count}...`)
+        count++;
+        setTimeout(() => {
+          login()
+        }, 10000)
+      }
     });
   });
 };
