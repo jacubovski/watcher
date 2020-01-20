@@ -50,5 +50,28 @@ module.exports = {
       });
     }
     return txt;
+  },
+  billsToPay(btps) {
+    let txt = ``;
+    if(btps === true) {
+      txt += btps;
+    } else {
+      Object.keys(btps).forEach(btp => {
+        if(btps[btp] instanceof Object) {
+          if(btp.match('cpg_forma_pgto')) {
+            txt += `${btp}:${btps[btp].fpg_codigo || ''}\r\n` 
+          } else if (btp.match('cpg_centro_custo')) {
+            txt += `${btp}:${btps[btp].cc_codigo || ''}\r\n` 
+          } else if (btp.match('cpg_historico')) {
+            txt += `${btp}:${btps[btp].his_codigo || ''}\r\n` 
+          } else if (btp.match('cpg_loja')) {
+            txt += `${btp}:${btps[btp].lj_codigo || ''}\r\n` 
+          }
+        }else {
+          txt += `${btp}:${btps[btp]}\r\n`     
+        }
+      });
+    }
+    return txt;
   }
 }

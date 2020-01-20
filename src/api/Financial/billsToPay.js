@@ -13,8 +13,6 @@ function BillsToPayActions(action, variables,fileName) {
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allBillsToPays':
-          return await allBillsToPays(this.variables);
         case 'fetchBillsToPay':
           return await billsToPay(this.variables);
         case 'createBillsToPay': 
@@ -35,27 +33,6 @@ function BillsToPayActions(action, variables,fileName) {
 
   const billsToPaySchema = Schema.get(this.owner, this.target, this.action);
 
-  async function allBillsToPays(variables) {
-    try {
-      const query = billsToPaySchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { billsToPays } = response.data.data;
-      const configToWrite = {
-        action: 'allBillsToPays',
-        values: billsToPays,
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-  
   async function billsToPay(variables) {
     try {
       const query = billsToPaySchema;
@@ -67,7 +44,9 @@ function BillsToPayActions(action, variables,fileName) {
       const { billsToPay } = response.data.data;
       const { cpg_contador } = billsToPay;
       const configToWrite = {
+        method: 'billsToPay',
         action: 'billsToPay',
+        module: 'financial',
         values: billsToPay,
         code: cpg_contador,
       }
@@ -89,7 +68,9 @@ function BillsToPayActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createBillsToPay } = response.data.data;
       const configToWrite = {
-        action: 'createBillsToPay',
+        method: 'createBillsToPay',
+        action: 'billsToPay',
+        module: 'financial',
         values: createBillsToPay,
         code: Date.now(),
       }
@@ -111,7 +92,9 @@ function BillsToPayActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBillsToPayCreate } = response.data.data;
       const configToWrite = {
-        action: 'bulkBillsToPayCreate',
+        method: 'bulkBillsToPayCreate',
+        action: 'billsToPay',
+        module: 'financial',
         values: bulkBillsToPayCreate,
         code: Date.now(),
       }
@@ -133,7 +116,9 @@ function BillsToPayActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateBillsToPay } = response.data.data;
       const configToWrite = {
-        action: 'updateBillsToPay',
+        method: 'updateBillsToPay',
+        action: 'billsToPay',
+        module: 'financial',
         values: updateBillsToPay,
         code: Date.now(),
       }
@@ -155,7 +140,9 @@ function BillsToPayActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBillsToPay } = response.data.data;
       const configToWrite = {
-        action: 'deleteBillsToPay',
+        method: 'deleteBillsToPay',
+        action: 'billsToPay',
+        module: 'financial',
         values: deleteBillsToPay,
         code: Date.now(),
       }

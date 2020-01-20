@@ -1,8 +1,0 @@
-{
-  "module": "table",
-  "target": "brand",
-  "action": "allBrands",
-  "variables": {
-    "company": 2
-  }
-}

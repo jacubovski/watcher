@@ -1,8 +1,0 @@
-{
-  "module": "table",
-  "target": "line",
-  "action": "allLines",
-  "variables": {
-    "company": 2
-  }
-}

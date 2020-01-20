@@ -1,8 +1,0 @@
-{
-  "module": "table",
-  "target": "historic",
-  "action": "allHistorics",
-  "variables": {
-    "company": 2
-  }
-}
