@@ -22,13 +22,13 @@ async function selectModule(...args) {
 };
 
 module.exports = {
-    async actions(payload, fileName) {
-      const { module, target, action, variables } = payload;
-      try {
-        const response = await selectModule(module, target, action, variables,fileName);
-        return response;
-      } catch (error) {
-        throw new Error(error.message)    
-      }
+  async actions(payload, fileName) {
+    const { module, target, action, variables } = payload;
+    try {
+      const response = await selectModule(module, target, action, variables,fileName);
+      return response;
+    } catch (error) {
+      throw new Error(error.message)    
     }
+  }
 }

@@ -1,6 +1,6 @@
 const { WatcherAPI } = require('./configs/chokidar.config');
 const { folderStructure } = require('./configs/checkFolders');
-const { handlerMethodsAPI }  = require('./api/')
+const { handlerMethodsAPI }  = require('./api/');
 
 folderStructure();
 

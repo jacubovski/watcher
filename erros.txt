@@ -1,0 +1,13 @@
+constas a pagar ok 
+    arquivos devem conter no maximo 4mil linhas
+    module finacial para financial
+
+contas a receber ok 
+    crc_data_vencimento mudar para crc_data_venc
+    crc_data_pagamento mudar para crc_data_pgto
+    remover crc_mov_codigo
+    crc_serie_nf trocar para crc_serie
+    crc_numero_nf trocar para crc_numero
+
+cheques ok
+    acertar chq_observacos para chq_observacoes 
