@@ -73,5 +73,34 @@ module.exports = {
       });
     }
     return txt;
+  },
+  billsToReceive(btrs){
+    let txt = ``;
+    if(btrs === true) {
+      txt += btrs;
+    } else {
+      Object.keys(btrs).forEach(btr => {
+        if(btrs[btr] instanceof Object) {
+          if(btr.match('crc_cliente')) {
+            txt += `${btr}:${btrs[btr].cli_codigo || ''}\r\n` 
+          } else if (btr.match('crc_centro_custo')) {
+            txt += `${btr}:${btrs[btr].cc_codigo || ''}\r\n` 
+          } else if (btr.match('crc_historico')) {
+            txt += `${btr}:${btrs[btr].hst_codigo || ''}\r\n` 
+          } else if (btr.match('crc_loja')) {
+            txt += `${btr}:${btrs[btr].lj_codigo || ''}\r\n` 
+          }else if (btr.match('crc_prazo_pgto')) {
+            txt += `${btr}:${btrs[btr].ppg_codigo || ''}\r\n` 
+          }else if (btr.match('crc_vendedor')) {
+            txt += `${btr}:${btrs[btr].vnd_codigo || ''}\r\n` 
+          }else if (btr.match('crc_caixa')) {
+            txt += `${btr}:${btrs[btr].func_codigo || ''}\r\n` 
+          }
+        }else {
+          txt += `${btr}:${btrs[btr]}\r\n`     
+        }
+      });
+    }
+    return txt;
   }
 }

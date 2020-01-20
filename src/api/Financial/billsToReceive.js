@@ -13,8 +13,6 @@ function BillsToReceiveActions(action, variables,fileName) {
   this.selectAndExecuteAction = async () => {
     try {
       switch (this.action) {
-        case 'allBillsToReceives':
-          return await allBillsToReceives(this.variables);
         case 'fetchBillsToReceive':
           return await billsToReceive(this.variables);
         case 'createBillsToReceive': 
@@ -35,27 +33,6 @@ function BillsToReceiveActions(action, variables,fileName) {
 
   const billsToReceiveSchema = Schema.get(this.owner, this.target, this.action);
 
-  async function allBillsToReceives(variables) {
-    try {
-      const query = billsToReceiveSchema;
-      const response = await axiosAuth.post('/macweb', {
-        query,
-        variables,
-      });
-      if (response.data.errors) throw new Error(response.data.errors);
-      const { billsToReceives } = response.data.data;
-      const configToWrite = {
-        action: 'allBillsToReceives',
-        values: billsToReceives,
-      }
-      WriteFile.handler(configToWrite);
-      CopyAndDeleteFile.handler(fileName);
-      return { code: 200, status: 'success' }
-    } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
-    }
-  }
-  
   async function billsToReceive(variables) {
     try {
       const query = billsToReceiveSchema;
@@ -67,7 +44,9 @@ function BillsToReceiveActions(action, variables,fileName) {
       const { billsToReceive } = response.data.data;
       const { cpg_contador } = billsToReceive;
       const configToWrite = {
+        method: 'billsToReceive',
         action: 'billsToReceive',
+        module: 'financial',
         values: billsToReceive,
         code: cpg_contador,
       }
@@ -89,7 +68,9 @@ function BillsToReceiveActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createBillsToReceive } = response.data.data;
       const configToWrite = {
-        action: 'createBillsToReceive',
+        method: 'createBillsToReceive',
+        action: 'billsToReceive',
+        module: 'financial',
         values: createBillsToReceive,
         code: Date.now(),
       }
@@ -111,7 +92,9 @@ function BillsToReceiveActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBillsToReceiveCreate } = response.data.data;
       const configToWrite = {
-        action: 'bulkBillsToReceiveCreate',
+        method: 'bulkBillsToReceiveCreate',
+        action: 'billsToReceive',
+        module: 'financial',
         values: bulkBillsToReceiveCreate,
         code: Date.now(),
       }
@@ -133,7 +116,9 @@ function BillsToReceiveActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateBillsToReceive } = response.data.data;
       const configToWrite = {
-        action: 'updateBillsToReceive',
+        method: 'updateBillsToReceive',
+        action: 'billsToReceive',
+        module: 'financial',
         values: updateBillsToReceive,
         code: Date.now(),
       }
@@ -155,7 +140,9 @@ function BillsToReceiveActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBillsToReceive } = response.data.data;
       const configToWrite = {
-        action: 'deleteBillsToReceive',
+        method: 'deleteBillsToReceive',
+        action: 'billsToReceive',
+        module: 'financial',
         values: deleteBillsToReceive,
         code: Date.now(),
       }
