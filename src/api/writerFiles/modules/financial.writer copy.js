@@ -30,16 +30,17 @@ module.exports = {
       txt += bank;
     } else if (Array.isArray(bank)) {
       txt += `{\r\n`;
-      bank.forEach((b, i) => {
-        Object.keys(b).forEach(k => {
+      data.forEach((d, i) => {
+        Object.keys(d).forEach(k => {
           if (k.match('bco_endereco')) {
-            txt += AddressWriter.createTXT(b[k]);
-          } else if (!k.match('bco_endereco')){
-            txt += `${k}:${b[k]}\r\n`;
+            txt += AddressWriter.createTXT(bank[b]);
           }
+          txt += `${k}:${d[k]}\r\n`;
         })
+        txt += '\r\n'
       })
       txt += `}\r\n`;
+      return txt;
     }else {
       Object.keys(bank).forEach(b => {
         if (b.match("bco_endereco")) {

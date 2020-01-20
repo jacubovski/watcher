@@ -8,7 +8,6 @@ async function handlerModuleToWrite(values, action, module) {
   switch (module) {
     case 'financial':
       const financialWriter = require('./modules/financial.writer');
-      console.log(action)
       return await financialWriter[action](values);
     default:
       break;

@@ -23,21 +23,18 @@ bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:O
 bco_codigo_cedente:4642614
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 1
- end_tipo: COMERCIAL
- end_endereco: AV DOS DEMOCRATICOS, 1743A
- end_numero: null
- end_complemento: 
- end_bairro: BONSUCESSO
- end_cep: 0
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RJ
+ end_origem:BANCOS
+ end_codigo_origem:1
+ end_tipo:COMERCIAL
+ end_endereco:AV DOS DEMOCRATICOS, 1743A
+ end_numero:null
+ end_complemento:
+ end_bairro:BONSUCESSO
+ end_cep:0
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RJ
 }
-}
-
 bco_codigo:2
 bco_codigo_banco:356
 bco_codigo_agencia:455
@@ -62,21 +59,18 @@ bco_titular:
 bco_prefixo:
 bco_codigo_cedente:
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 2
- end_tipo: COMERCIAL
- end_endereco: R CARDOSO DE MORAES, 221, LJ.A.
- end_numero: null
- end_complemento: 
- end_bairro: BONSUCESSO
- end_cep: 21031000
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RJ
+ end_origem:BANCOS
+ end_codigo_origem:2
+ end_tipo:COMERCIAL
+ end_endereco:R CARDOSO DE MORAES, 221, LJ.A.
+ end_numero:null
+ end_complemento:
+ end_bairro:BONSUCESSO
+ end_cep:21031000
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RJ
 }
-}
-
 bco_codigo:3
 bco_codigo_banco:104
 bco_codigo_agencia:673
@@ -101,21 +95,18 @@ bco_titular:JOAQUIM DA SILVA A E SOUSA
 bco_prefixo:
 bco_codigo_cedente:
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 3
- end_tipo: COMERCIAL
- end_endereco: AV. DOS ITALIANOS, 375.
- end_numero: null
- end_complemento: 
- end_bairro: ROCHA MIRANDA
- end_cep: 0
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RJ
+ end_origem:BANCOS
+ end_codigo_origem:3
+ end_tipo:COMERCIAL
+ end_endereco:AV. DOS ITALIANOS, 375.
+ end_numero:null
+ end_complemento:
+ end_bairro:ROCHA MIRANDA
+ end_cep:0
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RJ
 }
-}
-
 bco_codigo:4
 bco_codigo_banco:341
 bco_codigo_agencia:584
@@ -140,21 +131,18 @@ bco_titular:DUFER
 bco_prefixo:
 bco_codigo_cedente:
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 4
- end_tipo: COMERCIAL
- end_endereco: 
- end_numero: null
- end_complemento: 
- end_bairro: 
- end_cep: 0
- end_uf: 
- end_cod_municipio: 0
- end_municipio: 
+ end_origem:BANCOS
+ end_codigo_origem:4
+ end_tipo:COMERCIAL
+ end_endereco:
+ end_numero:null
+ end_complemento:
+ end_bairro:
+ end_cep:0
+ end_uf:
+ end_cod_municipio:0
+ end_municipio:
 }
-}
-
 bco_codigo:5
 bco_codigo_banco:341
 bco_codigo_agencia:584
@@ -179,21 +167,18 @@ bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:IT
 bco_codigo_cedente:058468743
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 5
- end_tipo: COMERCIAL
- end_endereco: AV DOS DEMOCRATICOS 1736
- end_numero: null
- end_complemento: 
- end_bairro: BONSUCESSO
- end_cep: 21050144
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RIO DE JANEIRO
+ end_origem:BANCOS
+ end_codigo_origem:5
+ end_tipo:COMERCIAL
+ end_endereco:AV DOS DEMOCRATICOS 1736
+ end_numero:null
+ end_complemento:
+ end_bairro:BONSUCESSO
+ end_cep:21050144
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RIO DE JANEIRO
 }
-}
-
 bco_codigo:6
 bco_codigo_banco:6
 bco_codigo_agencia:50284
@@ -218,21 +203,18 @@ bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:
 bco_codigo_cedente:
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 6
- end_tipo: COMERCIAL
- end_endereco: 
- end_numero: null
- end_complemento: 
- end_bairro: 
- end_cep: 0
- end_uf: 
- end_cod_municipio: 0
- end_municipio: 
+ end_origem:BANCOS
+ end_codigo_origem:6
+ end_tipo:COMERCIAL
+ end_endereco:
+ end_numero:null
+ end_complemento:
+ end_bairro:
+ end_cep:0
+ end_uf:
+ end_cod_municipio:0
+ end_municipio:
 }
-}
-
 bco_codigo:11
 bco_codigo_banco:33
 bco_codigo_agencia:3455
@@ -257,21 +239,18 @@ bco_titular:
 bco_prefixo:
 bco_codigo_cedente:35433820
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 11
- end_tipo: COMERCIAL
- end_endereco: DIOANDRADE@SANTANDER.COM.BR ISRAEL.SANTOS@SAN
- end_numero: null
- end_complemento: 
- end_bairro: 
- end_cep: 0
- end_uf: 
- end_cod_municipio: 0
- end_municipio: 
+ end_origem:BANCOS
+ end_codigo_origem:11
+ end_tipo:COMERCIAL
+ end_endereco:DIOANDRADE@SANTANDER.COM.BR ISRAEL.SANTOS@SAN
+ end_numero:null
+ end_complemento:
+ end_bairro:
+ end_cep:0
+ end_uf:
+ end_cod_municipio:0
+ end_municipio:
 }
-}
-
 bco_codigo:21
 bco_codigo_banco:123
 bco_codigo_agencia:12345
@@ -296,21 +275,18 @@ bco_titular:MICHEL JACU
 bco_prefixo:PREFX
 bco_codigo_cedente:054018553
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 21
- end_tipo: COMERCIAL
- end_endereco: 
- end_numero: null
- end_complemento: 
- end_bairro: 
- end_cep: 0
- end_uf: 
- end_cod_municipio: 0
- end_municipio: 
+ end_origem:BANCOS
+ end_codigo_origem:21
+ end_tipo:COMERCIAL
+ end_endereco:
+ end_numero:null
+ end_complemento:
+ end_bairro:
+ end_cep:0
+ end_uf:
+ end_cod_municipio:0
+ end_municipio:
 }
-}
-
 bco_codigo:35
 bco_codigo_banco:345
 bco_codigo_agencia:24562
@@ -335,21 +311,18 @@ bco_titular:?LTY,L?ET,Y?LETY?LETYN
 bco_prefixo:35235
 bco_codigo_cedente:2352352352
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 35
- end_tipo: COMERCIAL
- end_endereco: 
- end_numero: null
- end_complemento: 
- end_bairro: 
- end_cep: 0
- end_uf: 
- end_cod_municipio: 0
- end_municipio: 
+ end_origem:BANCOS
+ end_codigo_origem:35
+ end_tipo:COMERCIAL
+ end_endereco:
+ end_numero:null
+ end_complemento:
+ end_bairro:
+ end_cep:0
+ end_uf:
+ end_cod_municipio:0
+ end_municipio:
 }
-}
-
 bco_codigo:50
 bco_codigo_banco:104
 bco_codigo_agencia:205
@@ -374,21 +347,18 @@ bco_titular:
 bco_prefixo:
 bco_codigo_cedente:
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 50
- end_tipo: COMERCIAL
- end_endereco: RUA CARDOSO DE MORAIS 106
- end_numero: null
- end_complemento: 
- end_bairro: BONSUCESSO
- end_cep: 0
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RIO DE JANEIRO
+ end_origem:BANCOS
+ end_codigo_origem:50
+ end_tipo:COMERCIAL
+ end_endereco:RUA CARDOSO DE MORAIS 106
+ end_numero:null
+ end_complemento:
+ end_bairro:BONSUCESSO
+ end_cep:0
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RIO DE JANEIRO
 }
-}
-
 bco_codigo:76
 bco_codigo_banco:237
 bco_codigo_agencia:6553
@@ -413,19 +383,77 @@ bco_titular:MICHEL JACUBOVSKI
 bco_prefixo:BRADE
 bco_codigo_cedente:1234567890
 endereco{
-1: {
- end_origem: BANCOS
- end_codigo_origem: 76
- end_tipo: COMERCIAL
- end_endereco: RUA VOLUNTATIOS DA PATRIA 50
- end_numero: null
- end_complemento: 
- end_bairro: BOTFOGO
- end_cep: 27888000
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RIO DE JANEIRO
+ end_origem:BANCOS
+ end_codigo_origem:76
+ end_tipo:COMERCIAL
+ end_endereco:RUA VOLUNTATIOS DA PATRIA 50
+ end_numero:null
+ end_complemento:
+ end_bairro:BOTFOGO
+ end_cep:27888000
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RIO DE JANEIRO
 }
-}
+bco_codigo:77
+bco_codigo_banco:237
+bco_codigo_agencia:2794
+bco_conta:23235
+bco_nome_banco:BANCO DO CAPETA
+bco_nome_agencia:60.746.948/5611-49
+bco_nosso_numero:0
+bco_contato:RENATA/GUILHERME
+bco_numero_remessa:131
+bco_numero_convenio:0
+bco_numero_contrato:000000000003003817
+bco_telefones:3003-8170
+bco_dv_banco:2
+bco_dv_conta:1
+bco_dv_agencia:4
+bco_observacoes:COBR 
+bco_modalidade:0
+bco_cnab:1
+bco_carteira:009
+bco_aceite:false
+bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
+bco_prefixo:O
+bco_codigo_cedente:4642614
+endereco{
+ end_origem:BANCOS
+ end_codigo_origem:77
+ end_tipo:COMERCIAL
+ end_endereco:Rua Geni Saraiva
+ end_numero:756
+ end_complemento:casa 101
+ end_bairro:Floresta
+ end_cep:26032662
+ end_uf:RJ
+ end_cod_municipio:3303500
+ end_municipio:NOVA IGUACU
 
+ end_origem:BANCOS
+ end_codigo_origem:77
+ end_tipo:COMERCIAL
+ end_endereco:Rua Geni Saraiva
+ end_numero:756
+ end_complemento:casa 101
+ end_bairro:Floresta
+ end_cep:26032662
+ end_uf:RJ
+ end_cod_municipio:3303500
+ end_municipio:NOVA IGUACU
+
+ end_origem:BANCOS
+ end_codigo_origem:77
+ end_tipo:COMERCIAL
+ end_endereco:Rua Geni Saraiva
+ end_numero:756
+ end_complemento:casa 101
+ end_bairro:Floresta
+ end_cep:26032662
+ end_uf:RJ
+ end_cod_municipio:3303500
+ end_municipio:NOVA IGUACU
+
+}
 }

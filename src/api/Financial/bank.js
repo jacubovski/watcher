@@ -45,8 +45,9 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { banks } = response.data.data;
       const configToWrite = {
-        
-        action: 'allBanks',
+        module: 'financial',
+        action: 'bank',
+        method: 'allBanks',
         values: banks,
       }
       WriteFile.handler(configToWrite);
@@ -68,8 +69,9 @@ function BankActions(action, variables,fileName) {
       const { bank } = response.data.data;
       const { bco_codigo } = bank;
       const configToWrite = {
-        
+        method: 'bank',
         action: 'bank',
+        module: 'financial',
         values: bank,
         code: bco_codigo,
       }
@@ -91,8 +93,9 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { createBank } = response.data.data;
       const configToWrite = {
-        
-        action: 'createBank',
+        method: 'createBank',
+        action: 'bank',
+        module: 'financial',
         values: createBank,
         code: Date.now(),
       }
@@ -114,8 +117,9 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBankCreate } = response.data.data;
       const configToWrite = {
-        
-        action: 'bulkBankCreate',
+        method: 'bulkBankCreate',
+        action: 'bank',
+        module: 'financial',
         values: bulkBankCreate,
         code: Date.now(),
       }
@@ -137,8 +141,9 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { updateBank } = response.data.data;
       const configToWrite = {
-        
-        action: 'updateBank',
+        method: 'updateBank',
+        action: 'bank',
+        module: 'financial',
         values: updateBank,
         code: Date.now(),
       }
@@ -160,8 +165,9 @@ function BankActions(action, variables,fileName) {
       if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBank } = response.data.data;
       const configToWrite = {
-        
-        action: 'deleteBank',
+        method: 'deleteBank',
+        action: 'bank',
+        module: 'financial',
         values: deleteBank,
         code: Date.now(),
       }

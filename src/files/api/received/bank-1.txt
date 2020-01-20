@@ -22,17 +22,17 @@ bco_titular:FERRAGENS DUAS PATRIAS DE BONSUCESS
 bco_prefixo:O
 bco_codigo_cedente:4642614
 endereco{
-endereco-1: {
- end_origem: BANCOS
- end_codigo_origem: 1
- end_tipo: COMERCIAL
- end_endereco: AV DOS DEMOCRATICOS, 1743A
- end_numero: null
- end_complemento: 
- end_bairro: BONSUCESSO
- end_cep: 0
- end_uf: RJ
- end_cod_municipio: 0
- end_municipio: RJ
+1:{
+ end_origem:BANCOS
+ end_codigo_origem:1
+ end_tipo:COMERCIAL
+ end_endereco:AV DOS DEMOCRATICOS, 1743A
+ end_numero:null
+ end_complemento:
+ end_bairro:BONSUCESSO
+ end_cep:0
+ end_uf:RJ
+ end_cod_municipio:0
+ end_municipio:RJ
 }
 }
