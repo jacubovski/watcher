@@ -1,3 +1,5 @@
+const { cardsFetchFields, cardsInput, cardsParams } = require('./fields/cards.fields');
+
 const fildsPaymentTerm = `
   ppg_codigo ppg_descricao ppg_mostrar          
   ppg_prazo_nfe ppg_grupo_limite ppg_boleto_carteira 
@@ -361,5 +363,28 @@ module.exports = {
     allPaymentForms:`query FetchPaymentForms($company: Int!) {
       paymentForms(company: $company) {${paymentFormFields}}
     }`,
+  },
+  Card: {
+    createCard:`mutation CreateCard($crt_contador: Int,${cardsParams}, $company: Int!){
+      createCard(input:{crt_contador: $crt_contador,${cardsInput},empresa: $company}){
+        ${cardsFetchFields}
+      }
+    }`,
+    bulkCardsCreate:`mutation BulkCardCreate($input: [CardCreateInput!]!){
+      bulkCardCreate(input:$input)
+    }`,
+    updateCard:`mutation UpdateCard($from: String,$code: Int,${cardsParams},$company: Int!){
+      updateCard(from: $from,code: $code,company: $company,input:{${cardsInput}}){
+        ${cardsFetchFields}
+      }
+    }`,
+    deleteCard:`mutation DeleteCard($code: Int,$from: String,$company:Int!){
+      deleteCard(code: $code,from: $from,company:$company)
+    }`,
+    fetchCard:`query FetchCard($company: Int!, $code: Int, $from: String){
+      card(code:$code company: $company from: $from) { 
+        ${cardsFetchFields}
+      }
+    }`
   }
 }

@@ -39,7 +39,7 @@ function makePlots(data){
 }
 
 module.exports = {
-  create(data) {
+  create(data, action) {
     let txt = ``;
     if (Array.isArray(data)) {
       txt += `{\r\n`;
@@ -64,7 +64,6 @@ module.exports = {
       txt += data;
       return txt;
     }
-
     Object.keys(data).forEach(k => {
       if(!k.match('_endereco')) {
         txt += `${k}:${data[k]}\r\n`;
@@ -76,14 +75,12 @@ module.exports = {
         txt += makePlots(data[k])
       }
       if (k.match('_centro_custo')) {
-        console.log(data[k])
         txt += data[k].cc_codigo || ''
       }
       if (k.match('_historico')) {
         txt += data[k].his_codigo || ''
       }
       if (k.match('_loja')) {
-        console.log(data[k])
         txt += data[k].lj_codigo || ''
       }
     });

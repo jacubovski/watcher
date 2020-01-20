@@ -39,6 +39,11 @@ module.exports = {
           const paymentForm = new PaymentForm(action, variables, fileName);
           const resPaymentForm = await paymentForm.selectAndExecuteAction();
           return resPaymentForm;
+        case 'cards':
+          const Card = require('./cards');
+          const card = new Card(action, variables, fileName);
+          const resCard = await card.selectAndExecuteAction();
+          return resCard;  
         default:
           break;
       }
