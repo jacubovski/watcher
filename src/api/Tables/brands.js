@@ -88,10 +88,9 @@ function BrandActions(action, variables,fileName) {
         query,
         variables,
       });
-      if (response.data.errors) throw new Error(response.data.errors);
+      if (response.data.errors) throw response.data;
       const { createBrand } = response.data.data;
       const configToWrite = {
-        
         action: 'createBrand',
         values: createBrand,
         code: Date.now(),
@@ -100,7 +99,7 @@ function BrandActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      return { code: 500, status: `Error: ${err.message}` };
+      return { code: 500, status: err };
     }
   }
 

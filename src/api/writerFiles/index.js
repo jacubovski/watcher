@@ -9,6 +9,9 @@ async function handlerModuleToWrite(values, action, module) {
     case 'financial':
       const financialWriter = require('./modules/financial.writer');
       return await financialWriter[action](values);
+    case 'table':
+      const tableWriter = require('./modules/table.writer');
+      return await tableWriter[action](values);
     default:
       break;
   }

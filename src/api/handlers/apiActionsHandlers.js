@@ -17,7 +17,7 @@ async function selectModule(...args) {
         break;
     }
   } catch (error) {
-    throw new Error(error.message)    
+    throw new Error(error)    
   }
 };
 
@@ -28,7 +28,7 @@ module.exports = {
       const response = await selectModule(module, target, action, variables,fileName);
       return response;
     } catch (error) {
-      throw new Error(error.message)    
+      throw new Error(error)    
     }
   }
 }
