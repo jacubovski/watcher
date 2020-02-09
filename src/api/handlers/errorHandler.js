@@ -1,37 +1,38 @@
+const Notifier = require('../../configs/notifierOS');
+
+function handlerObjectError(payload) {
+  if(payload.hasOwnProperty('isBulk')) {
+    console.log(payload)
+  }
+  let msg= '***** Error => ';
+  Object.keys(payload).forEach(key => {
+    if(key === 'message' && key !== 'locations') {
+      msg += `${payload[key]} `;
+    }
+    if(key === 'path' && key !== 'locations') {
+      msg += `Em: ${payload[key]} *****\r\n `;
+    }
+  })  
+  console.log('\x1b[41m',msg)
+  const notify = new Notifier('Erro no MacWatcher', msg);
+  // notify.sendNotification();
+}
 module.exports = {
   handler(payload) {
-    const { data, errors } = payload;
-    let info;
-    Object.values(data).forEach(val => {
-      info = val ? data : errors;
-    })
-    Object.keys(info).forEach(k => {
-      if(info[k] instanceof Object) {
-        let msg= '***** Error => ';
-        Object.keys(info[k]).forEach(kk => {
-          if(kk === 'message' && kk !== 'locations') {
-            msg += `${info[k][kk]} `;
-          }
-          if(kk === 'path' && kk !== 'locations') {
-            msg += `Em: ${info[k][kk]} *****\r\n `;
-          }
-        })  
-        console.log('\x1b[41m',msg)
-      }
-      if(Array.isArray(info[k])) {
-        info[k].forEach(d => {
-          Object.keys(d).forEach(dd => {
-            if(typeof d[dd] === 'string') {
-              const msg = d[dd];  
-              if(msg.match('Variable')) {
-                console.log(msg.length)
-                const [msg1, msg2] = msg.split(';');
-                console.log('\x1b[41m',`${msg1}, ${msg2}`)
-              }
-            }
-          })
+    if (Array.isArray(payload)) {
+      payload.forEach(err => {
+        if (err instanceof Object) {
+          handlerObjectError(err);
+        }
+      })
+    } 
+    if (payload instanceof Object){
+      const{ data } = payload.response;
+      if(data.hasOwnProperty('errors')) {
+        Object.keys(data.errors).forEach(err => {
+          handlerObjectError(data.errors[err])
         })
       }
-    })
+    }
   }
 }

@@ -22,8 +22,8 @@ module.exports = {
     const resWrite = await handlerModuleToWrite(values, action, module);
     const nameFile = `${receivedFolder}/${method}${code? '-'+code:''}.txt`;
     fs.writeFile(nameFile, resWrite, (err) => {
-      if (err) console.log(err)
-      console.log(`${method} success!`)
+      if (err) console.log('\x1b[41m',err)
+      console.log("\x1b[32m",`${method} success!`)
     });
   },
 }

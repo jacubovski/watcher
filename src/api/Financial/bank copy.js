@@ -42,7 +42,7 @@ function BankActions(action, variables,fileName) {
         query,
         variables,
       });
-      if (response.data.errors) throw response.data.errors;
+      if (response.data.errors) throw new Error(response.data.errors);
       const { banks } = response.data.data;
       const configToWrite = {
         module: 'financial',
@@ -54,7 +54,7 @@ function BankActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      return { code: 500, status: err };
+      return { code: 500, status: `Error: ${err.message}` };
     }
   }
   
@@ -65,7 +65,7 @@ function BankActions(action, variables,fileName) {
         query,
         variables,
       });
-      if (response.data.errors) throw response.data.errors;
+      if (response.data.errors) throw new Error(response.data.errors);
       const { bank } = response.data.data;
       const { bco_codigo } = bank;
       const configToWrite = {
@@ -79,7 +79,7 @@ function BankActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      return { code: 500, status: err };
+      return { code: 500, status: `Error: ${err.message}` };
     }
   }
 
@@ -114,7 +114,7 @@ function BankActions(action, variables,fileName) {
         query,
         variables: { input: variables },
       });
-      if (response.data.errors) throw response.data.errors;
+      if (response.data.errors) throw new Error(response.data.errors);
       const { bulkBankCreate } = response.data.data;
       const configToWrite = {
         method: 'bulkBankCreate',
@@ -127,9 +127,7 @@ function BankActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      // if(err.hasOwnProperty(''))
-      err.isBulk = true;
-      return { code: 500, status: err };
+      return { code: 500, status: `Error: ${err.message}` };
     }
   }
 
@@ -140,7 +138,7 @@ function BankActions(action, variables,fileName) {
         query,
         variables,
       });
-      if (response.data.errors) throw response.data.errors;
+      if (response.data.errors) throw new Error(response.data.errors);
       const { updateBank } = response.data.data;
       const configToWrite = {
         method: 'updateBank',
@@ -153,7 +151,7 @@ function BankActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      return { code: 500, status: err };
+      return { code: 500, status: `Error: ${err.message}` };
     }
   }
 
@@ -164,7 +162,7 @@ function BankActions(action, variables,fileName) {
         query,
         variables,
       });
-      if (response.data.errors) throw response.data.errors;
+      if (response.data.errors) throw new Error(response.data.errors);
       const { deleteBank } = response.data.data;
       const configToWrite = {
         method: 'deleteBank',
@@ -177,7 +175,7 @@ function BankActions(action, variables,fileName) {
       CopyAndDeleteFile.handler(fileName);
       return { code: 200, status: 'success' }
     } catch (err) {
-      return { code: 500, status: err };
+      return { code: 500, status: `Error: ${err.message}` };
     }
   }
 }
